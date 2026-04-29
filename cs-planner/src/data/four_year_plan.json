@@ -1,0 +1,2522 @@
+{
+  "f27": [
+    {
+      "code": "AC 209A",
+      "title": "Data Science 1: Introduction to Data Science",
+      "instructor": "Protopapas, Pavlos"
+    },
+    {
+      "code": "AC 215",
+      "title": "Advanced Practical Data Science",
+      "instructor": "Protopapas, Pavlos"
+    },
+    {
+      "code": "AC 275",
+      "title": "Computational Design of Materials",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "AC 297R",
+      "title": "Computational Science and Engineering Capstone Project",
+      "instructor": "Pan, Weiwei"
+    },
+    {
+      "code": "AM 10",
+      "title": "Computing with Python for Scientists and Engineers",
+      "instructor": "McCarty, Logan"
+    },
+    {
+      "code": "AM 111",
+      "title": "Introduction to Scientific Computing",
+      "instructor": "Iams, Sarah"
+    },
+    {
+      "code": "AM 115",
+      "title": "Mathematical Modeling",
+      "instructor": "Brenner, Michael"
+    },
+    {
+      "code": "AM 121",
+      "title": "Introduction to Optimization: Models and Methods",
+      "instructor": "Weber, Melanie, Levine, Margo"
+    },
+    {
+      "code": "AM 201",
+      "title": "Physical Mathematics I",
+      "instructor": "Albergo, Michael"
+    },
+    {
+      "code": "AM 205",
+      "title": "Advanced Scientific Computing: Numerical Methods",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 207",
+      "title": "Stochastic Methods in Artificial Intelligence",
+      "instructor": "Koumoutsakos, Petros"
+    },
+    {
+      "code": "AM 210",
+      "title": "Algebraic Fundamentals of Representing Data",
+      "instructor": "Seigal, Anna"
+    },
+    {
+      "code": "AM 215",
+      "title": "Mathematical Modeling for Computational Science",
+      "instructor": "Brenner, Michael"
+    },
+    {
+      "code": "AM 226",
+      "title": "Neural Computation",
+      "instructor": "Pehlevan, Cengiz"
+    },
+    {
+      "code": "AM 254",
+      "title": "Mathematics of High-Dimensional Information Processing and Learning",
+      "instructor": "Lu, Yue"
+    },
+    {
+      "code": "AM 101",
+      "title": "Statistical Inference for Scientists and Engineers",
+      "instructor": "Kaxiras, Efthimios"
+    },
+    {
+      "code": "AP 195A",
+      "title": "Introduction to Solid State Physics",
+      "instructor": "Hoffman, Jenny"
+    },
+    {
+      "code": "AP 218",
+      "title": "Electrical, Optical, and Magnetic Properties of Materials",
+      "instructor": "Westervelt, Robert"
+    },
+    {
+      "code": "AP 225",
+      "title": "Introduction to Soft Matter",
+      "instructor": "Lewis, Jennifer"
+    },
+    {
+      "code": "AP 235",
+      "title": "Chemistry in Materials Science and Engineering",
+      "instructor": "Aizenberg, Joanna"
+    },
+    {
+      "code": "AP 236",
+      "title": "Physical Electrochemistry and its Applications to Sustainable Engineering",
+      "instructor": "Schiffer, Zachary"
+    },
+    {
+      "code": "AP 242",
+      "title": "Introduction to Single-Molecule Biophysics",
+      "instructor": "Prigozhin, Maxim"
+    },
+    {
+      "code": "AP 275",
+      "title": "Computational Design of Materials",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "AP 284",
+      "title": "Statistical Mechanics",
+      "instructor": "Manoharan, Vinothan"
+    },
+    {
+      "code": "AP 286",
+      "title": "Inference, Information theory, Learning and Statistical Mechanics",
+      "instructor": "Ramanathan, Sharad"
+    },
+    {
+      "code": "AP 296",
+      "title": "Mesoscale and Low Dimensional Devices",
+      "instructor": "Kim, Philip"
+    },
+    {
+      "code": "BE 110",
+      "title": "Signals, Systems, and Control in Bioengineering",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "BE 131",
+      "title": "Neuroengineering",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "CS 50",
+      "title": "Introduction to Computer Science",
+      "instructor": "Malan, David"
+    },
+    {
+      "code": "CS 51",
+      "title": "Abstraction and Design in Computation",
+      "instructor": "Shieber, Stuart"
+    },
+    {
+      "code": "CS 79",
+      "title": "Design of Useful and Usable Interactive Systems",
+      "instructor": "Gajos, Krzysztof"
+    },
+    {
+      "code": "CS 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 1050",
+      "title": "Privacy and Technology",
+      "instructor": "Waldo, James"
+    },
+    {
+      "code": "CS 1090A",
+      "title": "Data Science 1: Introduction to Data Science",
+      "instructor": "Protopapas, Pavlos"
+    },
+    {
+      "code": "CS 1200",
+      "title": "Intro to Algorithms, Computability, and Complexity",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 1210",
+      "title": "Introduction to Theoretical Computer Science",
+      "instructor": "Sudan, Madhu"
+    },
+    {
+      "code": "CS 1410",
+      "title": "Computing Hardware",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "CS 1650",
+      "title": "Data Systems",
+      "instructor": "Idreos, Stratos"
+    },
+    {
+      "code": "CS 1710",
+      "title": "Visualization",
+      "instructor": "Pfister, Hanspeter"
+    },
+    {
+      "code": "CS 1750",
+      "title": "Computer Graphics",
+      "instructor": "Gortler, Steven"
+    },
+    {
+      "code": "CS 1820",
+      "title": "Planning and Learning Methods in AI",
+      "instructor": "Gil, Stephanie"
+    },
+    {
+      "code": "CS 1840",
+      "title": "Reinforcement Learning",
+      "instructor": "Janson, Lucas, Brantley, Kiant\u00e9"
+    },
+    {
+      "code": "CS 2231",
+      "title": "Quantum Computation and Quantum Complexity",
+      "instructor": "Anshu, Anurag"
+    },
+    {
+      "code": "CS 2241",
+      "title": "Algorithms at the Ends of the Wire",
+      "instructor": "Mitzenmacher, Michael"
+    },
+    {
+      "code": "CS 2260",
+      "title": "Topics in Theory for Society: Differential Privacy",
+      "instructor": "Dwork, Cynthia"
+    },
+    {
+      "code": "CS 2360R",
+      "title": "Topics at the Interface between Computer Science and Economics",
+      "instructor": "Chen, Yiling"
+    },
+    {
+      "code": "CS 2370",
+      "title": "Economic Analysis as a Frontier of Theoretical Computer Science",
+      "instructor": "Gonczarowski, Yannai"
+    },
+    {
+      "code": "CS 2430",
+      "title": "Advanced Computer Networks",
+      "instructor": "Yu, Minlan"
+    },
+    {
+      "code": "CS 2470R",
+      "title": "Advanced Topics in Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "CS 2490R",
+      "title": "Topics in Edge Computing",
+      "instructor": "Janapa Reddi, Vijay"
+    },
+    {
+      "code": "CS 2520R",
+      "title": "Advanced Topics in Programming Languages",
+      "instructor": "Amin, Nada"
+    },
+    {
+      "code": "CS 2540",
+      "title": "Formal Methods for Computer Security",
+      "instructor": "Chong, Stephen"
+    },
+    {
+      "code": "CS 2600R",
+      "title": "Projects and Close Readings in Software Systems",
+      "instructor": "Kohler, Edward"
+    },
+    {
+      "code": "CS 2630",
+      "title": "Systems Security",
+      "instructor": "Mickens, James"
+    },
+    {
+      "code": "CS 2790R",
+      "title": "Research Topics in Human-Computer Interaction",
+      "instructor": "Glassman, Elena"
+    },
+    {
+      "code": "CS 2821R",
+      "title": "Topics in Machine Learning: Interpretability and Explainability",
+      "instructor": "Du, Yilun"
+    },
+    {
+      "code": "CS 2822R",
+      "title": "Topics in Machine Learning: Effective AI Support in Human + AI Settings",
+      "instructor": "Doshi-Velez, Finale"
+    },
+    {
+      "code": "CS 2840",
+      "title": "Computational Optimal Transport for Machine Learning",
+      "instructor": "Alvarez-Melis, David"
+    },
+    {
+      "code": "CS 2880",
+      "title": "AI for Social Impact",
+      "instructor": "Tambe, Milind"
+    },
+    {
+      "code": "CS 2881R",
+      "title": "Topics in the Foundations of Machine Learning",
+      "instructor": "Barak, Boaz"
+    },
+    {
+      "code": "CS 2901",
+      "title": "PhD Grad Cohort Research Seminar",
+      "instructor": "Barak, Boaz"
+    },
+    {
+      "code": "ECE 141",
+      "title": "Computing Hardware",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "ECE 152 (formerly ES 152)",
+      "title": "Circuits, Devices, and Transduction",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "ECE 155 (formerly ES 155)",
+      "title": "Systems and Control",
+      "instructor": "Li, Na (Lina)"
+    },
+    {
+      "code": "ECE 157 (formerly ES 157)",
+      "title": "Biological Signal Processing",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "ECE 158 (formerly ES 158)",
+      "title": "Introduction to Optimal Control and Reinforcement Learning",
+      "instructor": "Yang, Heng (Hank)"
+    },
+    {
+      "code": "ENCE 10",
+      "title": "Gateway to Energy, Climate and Environment",
+      "instructor": "Hau, Lene"
+    },
+    {
+      "code": "EPS 139",
+      "title": "Paleoclimate as Prologue",
+      "instructor": "Huybers, Peter"
+    },
+    {
+      "code": "EPS 200",
+      "title": "Atmospheric Chemistry and Physics",
+      "instructor": "Wofsy, Steven"
+    },
+    {
+      "code": "EPS 208",
+      "title": "Physics of Climate",
+      "instructor": "Kuang, Zhiming"
+    },
+    {
+      "code": "EPS 239",
+      "title": "The Consequences of Energy Systems",
+      "instructor": "Schrag, Daniel"
+    },
+    {
+      "code": "EPS 272R",
+      "title": "Topics in Structural Geology",
+      "instructor": "Shaw, John"
+    },
+    {
+      "code": "ES 53",
+      "title": "Quantitative Physiology as a Basis for Bioengineering",
+      "instructor": "Moyer, Linsey"
+    },
+    {
+      "code": "ES 55",
+      "title": "Fundamentals of Engineering Design",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 100",
+      "title": "Engineering Capstone Projects (1 semester)",
+      "instructor": "Richardson, Eric, Bertoldi, Katia, Moyer, Linsey, Coughlin, Mark"
+    },
+    {
+      "code": "ES 112",
+      "title": "Thermodynamics",
+      "instructor": "Martin, Scot"
+    },
+    {
+      "code": "ES 125",
+      "title": "Mechanical Systems",
+      "instructor": "Wood, Robert"
+    },
+    {
+      "code": "ES 128",
+      "title": "Computational Solid and Structural Mechanics",
+      "instructor": "Bertoldi, Katia"
+    },
+    {
+      "code": "ES 170",
+      "title": "Engineering Quantum Mechanics",
+      "instructor": "Semeghini, Giulia"
+    },
+    {
+      "code": "ES 176",
+      "title": "Introduction to MicroElectroMechanical System",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 181",
+      "title": "Engineering Thermodynamics",
+      "instructor": "Suo, Zhigang"
+    },
+    {
+      "code": "ES 192",
+      "title": "Materials Selection and Design",
+      "instructor": "Hasanov, Seymur"
+    },
+    {
+      "code": "ES 200",
+      "title": "Advanced Engineering Quantum Mechanics",
+      "instructor": "Capasso, Federico"
+    },
+    {
+      "code": "ES 215",
+      "title": "Physical and Economical Operations of Sustainable Energy Systems",
+      "instructor": "Xie, Le"
+    },
+    {
+      "code": "ES 221",
+      "title": "Drug Delivery",
+      "instructor": "Mitragotri, Samir"
+    },
+    {
+      "code": "ES 223",
+      "title": "Neurophysiology and Neural Interfaces",
+      "instructor": "Srinivasan, Shriya"
+    },
+    {
+      "code": "ES 224",
+      "title": "Advanced Biomechanics and Assistive Robotics",
+      "instructor": "Slade, Patrick"
+    },
+    {
+      "code": "ES 225",
+      "title": "Neuroengineering",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "ES 228",
+      "title": "Computational Solid and Structural Mechanics",
+      "instructor": "Bertoldi, Katia"
+    },
+    {
+      "code": "ES 240",
+      "title": "Solid Mechanics",
+      "instructor": "Vlassak, Joost"
+    },
+    {
+      "code": "ES 250",
+      "title": "Information Theory",
+      "instructor": "Calmon, Flavio du Pin"
+    },
+    {
+      "code": "ES 254",
+      "title": "Mathematics of High-Dimensional Information Processing and Learning",
+      "instructor": "Lu, Yue"
+    },
+    {
+      "code": "ES 260",
+      "title": "Atmospheric Chemistry and Physics",
+      "instructor": "Wofsy, Steven"
+    },
+    {
+      "code": "ES 275",
+      "title": "Integrated Nonlinear Photonics",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "ES 276",
+      "title": "Introduction to MicroElectroMechanical System",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 280",
+      "title": "System Engineering",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 297",
+      "title": "Professional Writing for Scientists and Engineers",
+      "instructor": "Needleman, Daniel"
+    },
+    {
+      "code": "ES 268",
+      "title": "Physics of Climate",
+      "instructor": "Kuang, Zhiming"
+    },
+    {
+      "code": "ESE 1XX",
+      "title": "New course proposed",
+      "instructor": "Sunderland, Elsie"
+    },
+    {
+      "code": "ESE 102",
+      "title": "Data Analysis and Statistical Inference in the Earth and Environmental Sciences",
+      "instructor": "Fu, Roger"
+    },
+    {
+      "code": "ESE 162",
+      "title": "Hydrology",
+      "instructor": "McColl, Kaighin"
+    },
+    {
+      "code": "GENED 1104",
+      "title": "Science and Cooking: From Haute Cuisine to Soft Matter Science",
+      "instructor": "Sorensen, Pia"
+    }
+  ],
+  "s27": [
+    {
+      "code": "AC 209B",
+      "title": "Data Science 2: Advanced Topics in Data Science",
+      "instructor": "Protopapas, Pavlos, Pillai, Natesh"
+    },
+    {
+      "code": "AC 221",
+      "title": "Critical Thinking in Data Science",
+      "instructor": "Waldo, James"
+    },
+    {
+      "code": "AC 297R",
+      "title": "Computational Science and Engineering Capstone Project",
+      "instructor": "TBD ACS, Instructor"
+    },
+    {
+      "code": "AC 299R",
+      "title": "Special Topics in Applied Computation",
+      "instructor": "Weinstock, Daniel"
+    },
+    {
+      "code": "AM 2XX",
+      "title": "placeholder for new course",
+      "instructor": "Chung, SueYeon"
+    },
+    {
+      "code": "AM 22A",
+      "title": "Solving and Optimizing",
+      "instructor": "Gortler, Steven"
+    },
+    {
+      "code": "AM 50",
+      "title": "Introduction to Applied Mathematics",
+      "instructor": "Pehlevan, Cengiz"
+    },
+    {
+      "code": "AM 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Levine, Margo, Iams, Sarah"
+    },
+    {
+      "code": "AM 99R",
+      "title": "Thesis Research",
+      "instructor": "Iams, Sarah, Levine, Margo"
+    },
+    {
+      "code": "AM 105",
+      "title": "Ordinary and Partial Differential Equations",
+      "instructor": "Levine, Margo"
+    },
+    {
+      "code": "AM 106",
+      "title": "Algebra for Models and Data",
+      "instructor": "Seigal, Anna"
+    },
+    {
+      "code": "AM 107",
+      "title": "Graph Theory and Combinatorics",
+      "instructor": "Valiant, Leslie"
+    },
+    {
+      "code": "AM 108",
+      "title": "Nonlinear Dynamical Systems",
+      "instructor": "Iams, Sarah"
+    },
+    {
+      "code": "AM 109",
+      "title": "Introduction to PDEs and their Applications",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 115",
+      "title": "Mathematical Modeling",
+      "instructor": "Kuang, Zhiming"
+    },
+    {
+      "code": "AM 120",
+      "title": "Applied Linear Algebraand Big Data",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "AM 201",
+      "title": "Physical Mathematics I",
+      "instructor": "Albergo, Michael"
+    },
+    {
+      "code": "AM 202",
+      "title": "Introduction to PDEs and their Applications",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 220",
+      "title": "Geometric Methods for Machine Learning",
+      "instructor": "Weber, Melanie"
+    },
+    {
+      "code": "AM 231",
+      "title": "Decision Theory",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "AM 299R",
+      "title": "Special Topics in Applied Mathematics",
+      "instructor": "TBD AM, Instructor"
+    },
+    {
+      "code": "AP 50B",
+      "title": "Physics as a Foundation for Science and Engineering, Part II",
+      "instructor": "Hekstra, Doeke, TBD AP, Instructor"
+    },
+    {
+      "code": "AP 195B",
+      "title": "Introduction to Quantum Materials and Devices",
+      "instructor": "Westervelt, Robert"
+    },
+    {
+      "code": "AP 216",
+      "title": "Quantum and Classical Electromagnetic Interaction with Matter",
+      "instructor": "Ham, Donhee"
+    },
+    {
+      "code": "AP 276",
+      "title": "Platforms for Quantum Science",
+      "instructor": "Semeghini, Giulia"
+    },
+    {
+      "code": "AP 290A",
+      "title": "Research Practices and Academic Culture in Applied Sciences and Engineering",
+      "instructor": "Miller, Kelly, Westervelt, Robert"
+    },
+    {
+      "code": "AP 291",
+      "title": "Electron Microscopy Laboratory",
+      "instructor": "Bell, David"
+    },
+    {
+      "code": "AP 295B",
+      "title": "Quantum Theory of Solids",
+      "instructor": "Vishwanath, Ashvin"
+    },
+    {
+      "code": "AP 299R",
+      "title": "Special Topics in Applied Physics",
+      "instructor": "TBD AP, Instructor"
+    },
+    {
+      "code": "BE 124",
+      "title": "Biomechanics of Movement and Assistive Robotics",
+      "instructor": "Slade, Patrick"
+    },
+    {
+      "code": "BE 125",
+      "title": "Tissue Engineering",
+      "instructor": "Mooney, David"
+    },
+    {
+      "code": "BE 129",
+      "title": "Introduction to Bioelectronics",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "BE 130",
+      "title": "Neural Control of Movement",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "CS 1XX",
+      "title": "placeholder for new course",
+      "instructor": "Kakade, Sham, Du, Yilun"
+    },
+    {
+      "code": "CS 2XX",
+      "title": "placeholder for new grad course",
+      "instructor": "Idreos, Stratos"
+    },
+    {
+      "code": "CS 20",
+      "title": "Discrete Mathematics for Computer Science",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 32",
+      "title": "Computational Thinking and Problem Solving",
+      "instructor": "Smith, Michael"
+    },
+    {
+      "code": "CS 50 (Spring Offering)",
+      "title": "Introduction to Computer Science (for concentrators unable to take in fall term)",
+      "instructor": "Malan, David"
+    },
+    {
+      "code": "CS 61",
+      "title": "Systems Programming and Machine Organization",
+      "instructor": "Kohler, Edward, Yang, Juncheng"
+    },
+    {
+      "code": "CS 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 96",
+      "title": "System Design Projects",
+      "instructor": "Tambe, Milind"
+    },
+    {
+      "code": "CS 1090B",
+      "title": "Data Science 2: Advanced Topics in Data Science",
+      "instructor": "Protopapas, Pavlos, Pillai, Natesh"
+    },
+    {
+      "code": "CS 1200",
+      "title": "Intro to Algorithms, Computability, and Complexity",
+      "instructor": "Vadhan, Salil"
+    },
+    {
+      "code": "CS 1240",
+      "title": "Data Structures and Algorithms",
+      "instructor": "Chen, Sitan, Mitzenmacher, Michael"
+    },
+    {
+      "code": "CS 1260",
+      "title": "Fairness and Privacy: Perspectives of Law and Probability",
+      "instructor": "Dwork, Cynthia"
+    },
+    {
+      "code": "CS 1280",
+      "title": "Convex Optimization and Applications in Machine Learning",
+      "instructor": "Chen, Yiling"
+    },
+    {
+      "code": "CS 1411",
+      "title": "Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "CS 1440R",
+      "title": "Networks Design Projects",
+      "instructor": "Kung, H. T."
+    },
+    {
+      "code": "CS 1450",
+      "title": "Networking at Scale",
+      "instructor": "Yu, Minlan"
+    },
+    {
+      "code": "CS 1520",
+      "title": "Programming Languages",
+      "instructor": "Amin, Nada"
+    },
+    {
+      "code": "CS 1530",
+      "title": "Compilers",
+      "instructor": "Chong, Stephen"
+    },
+    {
+      "code": "CS 1810",
+      "title": "Machine Learning",
+      "instructor": "Doshi-Velez, Finale"
+    },
+    {
+      "code": "CS 1960",
+      "title": "Designing K\u201312 Computer Science Learning Experiences",
+      "instructor": "Brennan, Karen"
+    },
+    {
+      "code": "CS 2050",
+      "title": "High Performance Computing for Science and Engineering",
+      "instructor": "Witt, Chuck"
+    },
+    {
+      "code": "CS 2211",
+      "title": "Information Theory in CS",
+      "instructor": "Sudan, Madhu"
+    },
+    {
+      "code": "CS 2280",
+      "title": "Computational Learning Theory",
+      "instructor": "Valiant, Leslie"
+    },
+    {
+      "code": "CS 2411",
+      "title": "Advanced Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "CS 2440R",
+      "title": "Networks Design Projects",
+      "instructor": "Kung, H. T."
+    },
+    {
+      "code": "CS 2710",
+      "title": "Topics in Data Visualization",
+      "instructor": "Pfister, Hanspeter"
+    },
+    {
+      "code": "CS 2760",
+      "title": "Design, Technology, and Social Impact",
+      "instructor": "Gajos, Krzysztof"
+    },
+    {
+      "code": "CS 2824",
+      "title": "Foundations of Reinforcement Learning",
+      "instructor": "Brantley, Kiant\u00e9"
+    },
+    {
+      "code": "CS 2860",
+      "title": "Multi-Robot Systems: Control, Communication, and Security",
+      "instructor": "Gil, Stephanie"
+    },
+    {
+      "code": "CS 2902",
+      "title": "PhD Grad Cohort Research Seminar",
+      "instructor": "TBD CS, Instructor"
+    },
+    {
+      "code": "CS 2990R",
+      "title": "Special Topics in Computer Science",
+      "instructor": "TBD CS, Instructor"
+    },
+    {
+      "code": "ECE 50 (formerly ES 50)",
+      "title": "Introduction to Electrical Engineering",
+      "instructor": "Loncar, Marko"
+    },
+    {
+      "code": "ECE 145 (formerly ES 145)",
+      "title": "Modern Electric Power Systems",
+      "instructor": "Xie, Le"
+    },
+    {
+      "code": "ECE 146",
+      "title": "Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "ECE 151 (formerly ES 151)",
+      "title": "Applied Electromagnetism",
+      "instructor": "Hu, Evelyn"
+    },
+    {
+      "code": "ECE 154 (formerly ES 154)",
+      "title": "Electronic Devices and Circuits",
+      "instructor": "Wei, Gu-Yeon"
+    },
+    {
+      "code": "ECE 156 (formerly ES 156)",
+      "title": "Signals and Communication",
+      "instructor": "Calmon, Flavio du Pin"
+    },
+    {
+      "code": "ECE 177 (formerly ES 177)",
+      "title": "Microfabrication Laboratory",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "EPS 237",
+      "title": "Planetary Radiation and Climate",
+      "instructor": "Wordsworth, Robin"
+    },
+    {
+      "code": "ES 2XX (EE)",
+      "title": "New EE Grad Course",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "ES 20R",
+      "title": "Physics of Sports",
+      "instructor": "Miller, Kelly"
+    },
+    {
+      "code": "ES 24",
+      "title": "Flavor Molecules of Food Fermentation: Exploration and Inquiry",
+      "instructor": "Sorensen, Pia"
+    },
+    {
+      "code": "ES 26",
+      "title": "Humanity and its Futures",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 51",
+      "title": "Computer-Aided Machine Design",
+      "instructor": "Hasanov, Seymur"
+    },
+    {
+      "code": "ES 55",
+      "title": "Fundamentals of Engineering Design",
+      "instructor": "TBD MDE, Instructor"
+    },
+    {
+      "code": "ES 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Bertoldi, Katia, Moyer, Linsey, Hasanov, Seymur"
+    },
+    {
+      "code": "ES 94",
+      "title": "Entrepreneurship and Innovation: Case Study Perspectives",
+      "instructor": "TBD GENERAL, Instructor"
+    },
+    {
+      "code": "ES 100HFB",
+      "title": "Engineering Design Projects",
+      "instructor": "Bertoldi, Katia, Moyer, Linsey, Hasanov, Seymur, Richardson, Eric"
+    },
+    {
+      "code": "ES 112",
+      "title": "Thermodynamics",
+      "instructor": "Martin, Scot"
+    },
+    {
+      "code": "ES 120",
+      "title": "Introduction to the Mechanics of Solids",
+      "instructor": "Vlassak, Joost"
+    },
+    {
+      "code": "ES 123",
+      "title": "Introduction to Fluid Mechanics and Transport Processes",
+      "instructor": "Schiffer, Zachary"
+    },
+    {
+      "code": "ES 159",
+      "title": "Introduction to Robotics",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 183",
+      "title": "Introduction to Heat Transfer",
+      "instructor": "TBD MSME, Instructor"
+    },
+    {
+      "code": "ES 190",
+      "title": "Introduction to Materials Science and Engineering",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "ES 195",
+      "title": "Using First Principles to Reverse-engineer Complex Biological Systems",
+      "instructor": "Cluzel, Philippe"
+    },
+    {
+      "code": "ES 201",
+      "title": "Decision Theory",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "ES 223",
+      "title": "Neurophysiology and Neural Interfaces",
+      "instructor": "Srinivasan, Shriya"
+    },
+    {
+      "code": "ES 227",
+      "title": "Medical Device Design",
+      "instructor": "Walsh, Conor, Moyer, Linsey"
+    },
+    {
+      "code": "ES 229",
+      "title": "Survey of Energy Technology",
+      "instructor": "Aziz, Michael"
+    },
+    {
+      "code": "ES 230",
+      "title": "Advanced Tissue Engineering",
+      "instructor": "Mooney, David"
+    },
+    {
+      "code": "ES 231",
+      "title": "Energy Technology",
+      "instructor": "Aziz, Michael"
+    },
+    {
+      "code": "ES 234 (J-Term)",
+      "title": "Technology Venture Immersion",
+      "instructor": "Walsh, Conor"
+    },
+    {
+      "code": "ES 241",
+      "title": "Advanced Elasticity",
+      "instructor": "Suo, Zhigang"
+    },
+    {
+      "code": "ES 249",
+      "title": "Advanced Neural Control of Movement",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "ES 255",
+      "title": "High Performance Electronic-Photonic Integrated Circuits",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "ES 257",
+      "title": "Semidefinite Optimization and Relaxation",
+      "instructor": "Yang, Heng (Hank)"
+    },
+    {
+      "code": "ES 258",
+      "title": "Introduction to Bioelectronics",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "ES 259",
+      "title": "Advanced Introduction to Robotics",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 273",
+      "title": "Optics and Photonics",
+      "instructor": "Capasso, Federico"
+    },
+    {
+      "code": "ES 277",
+      "title": "Microfabrication Laboratory",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "ES 292a (J-Term)",
+      "title": "Launch Lab/Capstone 1",
+      "instructor": "Wilcox, Russell, MacCormack, Alan"
+    },
+    {
+      "code": "ES 292B",
+      "title": "Launch Lab/Capstone 2",
+      "instructor": "Wilcox, Russell, MacCormack, Alan"
+    },
+    {
+      "code": "ES 294",
+      "title": "Humanity and its Futures",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 299R",
+      "title": "Special Topics in Engineering Sciences",
+      "instructor": "TBD GENERAL, Instructor"
+    },
+    {
+      "code": "ESE 50",
+      "title": "The Fluid Earth: Oceans, Atmosphere, Climate, and Environment",
+      "instructor": "Straneo, Fiamma"
+    },
+    {
+      "code": "ESE 101",
+      "title": "Global Warming Science 101",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "ESE 109",
+      "title": "Earth Resources and the Environment",
+      "instructor": "Shaw, John"
+    },
+    {
+      "code": "ESE 133",
+      "title": "Atmospheric Chemistry",
+      "instructor": "Jacob, Daniel"
+    },
+    {
+      "code": "ESE 161",
+      "title": "Applied Environmental Toxicology",
+      "instructor": "Sunderland, Elsie"
+    },
+    {
+      "code": "ESE 166",
+      "title": "State-of-the-Art Harvard Climate Observatory and Associated Instrumentation",
+      "instructor": "Anderson, James"
+    },
+    {
+      "code": "ESE 168",
+      "title": "Human Environmental Data Science: Agriculture, Conflict, and Health",
+      "instructor": "Huybers, Peter"
+    },
+    {
+      "code": "PHYSCI 11",
+      "title": "Foundations and Frontiers of Modern Chemistry: A Molecular and Global Perspective",
+      "instructor": "Keutsch, Frank"
+    },
+    {
+      "code": "PRO 725X",
+      "title": "Integrative Frameworks (Spring modules)",
+      "instructor": "TBD MDE, Instructor"
+    },
+    {
+      "code": "STU 1232",
+      "title": "Collaborative Design Engineering Studio II",
+      "instructor": "Grinham, Jonathan, Reuther, Karen, Bradford, Kipp, TBD MDE, Instructor"
+    }
+  ],
+  "s28": [
+    {
+      "code": "AC 209B",
+      "title": "Data Science 2: Advanced Topics in Data Science",
+      "instructor": "Protopapas, Pavlos"
+    },
+    {
+      "code": "AC 221",
+      "title": "Critical Thinking in Data Science",
+      "instructor": "TBD ACS, Instructor"
+    },
+    {
+      "code": "AC 297R",
+      "title": "Computational Science and Engineering Capstone Project",
+      "instructor": "TBD ACS, Instructor"
+    },
+    {
+      "code": "AM 22A",
+      "title": "Solving and Optimizing",
+      "instructor": "Gortler, Steven"
+    },
+    {
+      "code": "AM 50",
+      "title": "Introduction to Applied Mathematics",
+      "instructor": "Pehlevan, Cengiz"
+    },
+    {
+      "code": "AM 105",
+      "title": "Ordinary and Partial Differential Equations",
+      "instructor": "Levine, Margo"
+    },
+    {
+      "code": "AM 106",
+      "title": "Algebra for Models and Data",
+      "instructor": "Seigal, Anna"
+    },
+    {
+      "code": "AM 107",
+      "title": "Graph Theory and Combinatorics",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "AM 108",
+      "title": "Nonlinear Dynamical Systems",
+      "instructor": "Iams, Sarah"
+    },
+    {
+      "code": "AM 109",
+      "title": "Introduction to PDEs and their Applications",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 115",
+      "title": "Mathematical Modeling",
+      "instructor": "Kuang, Zhiming"
+    },
+    {
+      "code": "AM 120",
+      "title": "Applied Linear Algebraand Big Data",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "AM 202",
+      "title": "Introduction to PDEs and their Applications",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 220",
+      "title": "Geometric Methods for Machine Learning",
+      "instructor": "Weber, Melanie"
+    },
+    {
+      "code": "AM 231",
+      "title": "Decision Theory",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "AM 232",
+      "title": "Estimation and Control of Dynamic Systems",
+      "instructor": "Li, Na (Lina)"
+    },
+    {
+      "code": "AP 50B",
+      "title": "Physics as a Foundation for Science and Engineering, Part II",
+      "instructor": "Miller, Kelly"
+    },
+    {
+      "code": "AP 195B",
+      "title": "Introduction to Quantum Materials and Devices",
+      "instructor": "Westervelt, Robert"
+    },
+    {
+      "code": "AP 216",
+      "title": "Quantum and Classical Electromagnetic Interaction with Matter",
+      "instructor": "Ham, Donhee"
+    },
+    {
+      "code": "AP 276",
+      "title": "Platforms for Quantum Science",
+      "instructor": "Semeghini, Giulia"
+    },
+    {
+      "code": "AP 291",
+      "title": "Electron Microscopy Laboratory",
+      "instructor": "Bell, David"
+    },
+    {
+      "code": "BE 124",
+      "title": "Biomechanics of Movement and Assistive Robotics",
+      "instructor": "Slade, Patrick"
+    },
+    {
+      "code": "BE 125",
+      "title": "Tissue Engineering",
+      "instructor": "Mooney, David"
+    },
+    {
+      "code": "BE 128",
+      "title": "Introduction to Biomedical Imaging and Systems",
+      "instructor": "Moyer, Linsey"
+    },
+    {
+      "code": "BE 129",
+      "title": "Introduction to Bioelectronics",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "BE 130",
+      "title": "Neural Control of Movement",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "BE 191",
+      "title": "Introduction to Biomaterials",
+      "instructor": "Lewis, Jennifer"
+    },
+    {
+      "code": "CS 2XX",
+      "title": "placeholder for new grad course",
+      "instructor": "Idreos, Stratos"
+    },
+    {
+      "code": "CS 20",
+      "title": "Discrete Mathematics for Computer Science",
+      "instructor": "Nesson, Rebecca"
+    },
+    {
+      "code": "CS 32",
+      "title": "Computational Thinking and Problem Solving",
+      "instructor": "Smith, Michael"
+    },
+    {
+      "code": "CS 37",
+      "title": "Incentives in the Wild: from Tanking in Sports to Mining Cryptocurrencies",
+      "instructor": "Gonczarowski, Yannai"
+    },
+    {
+      "code": "CS 50 (Spring Offering)",
+      "title": "Introduction to Computer Science (for concentrators unable to take in fall term)",
+      "instructor": "Malan, David"
+    },
+    {
+      "code": "CS 61",
+      "title": "Systems Programming and Machine Organization",
+      "instructor": "Kohler, Edward"
+    },
+    {
+      "code": "CS 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 96",
+      "title": "System Design Projects",
+      "instructor": "Tambe, Milind"
+    },
+    {
+      "code": "CS 1090B",
+      "title": "Data Science 2: Advanced Topics in Data Science",
+      "instructor": "Protopapas, Pavlos"
+    },
+    {
+      "code": "CS 1200",
+      "title": "Intro to Algorithms, Computability, and Complexity",
+      "instructor": "Anshu, Anurag"
+    },
+    {
+      "code": "CS 1240",
+      "title": "Data Structures and Algorithms",
+      "instructor": "Chen, Sitan, Mitzenmacher, Michael"
+    },
+    {
+      "code": "CS 1260",
+      "title": "Fairness and Privacy: Perspectives of Law and Probability",
+      "instructor": "Dwork, Cynthia"
+    },
+    {
+      "code": "CS 1360",
+      "title": "Economics and Computation",
+      "instructor": "Procaccia, Ariel"
+    },
+    {
+      "code": "CS 1411",
+      "title": "Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "CS 1450",
+      "title": "Networking at Scale",
+      "instructor": "Yu, Minlan"
+    },
+    {
+      "code": "CS 1480",
+      "title": "Design of VLSI Circuits and Systems",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "CS 1520",
+      "title": "Programming Languages",
+      "instructor": "Amin, Nada"
+    },
+    {
+      "code": "CS 1530",
+      "title": "Compilers",
+      "instructor": "Chong, Stephen"
+    },
+    {
+      "code": "CS 1610",
+      "title": "Operating Systems",
+      "instructor": "Mickens, James"
+    },
+    {
+      "code": "CS 1780",
+      "title": "Engineering Usable Interactive Systems",
+      "instructor": "Glassman, Elena"
+    },
+    {
+      "code": "CS 1810",
+      "title": "Machine Learning",
+      "instructor": "Alvarez-Melis, David, Doshi-Velez, Finale"
+    },
+    {
+      "code": "CS 1870",
+      "title": "Introduction to Computational Linguistics and Natural-language Processing",
+      "instructor": "Shieber, Stuart"
+    },
+    {
+      "code": "CS 1960",
+      "title": "Designing K\u201312 Computer Science Learning Experiences",
+      "instructor": "Brennan, Karen"
+    },
+    {
+      "code": "CS 2050",
+      "title": "High Performance Computing for Science and Engineering",
+      "instructor": "Witt, Chuck"
+    },
+    {
+      "code": "CS 2251",
+      "title": "Topics in Theoretical Computer Science: Essential Coding Theory",
+      "instructor": "Sudan, Madhu"
+    },
+    {
+      "code": "CS 2411",
+      "title": "Advanced Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "CS 2420",
+      "title": "Computing at Scale",
+      "instructor": "Kung, H. T."
+    },
+    {
+      "code": "CS 2480",
+      "title": "Advanced Design of VLSI Circuits and Systems",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "CS 2640",
+      "title": "Modern Computer Storage",
+      "instructor": "Yang, Juncheng"
+    },
+    {
+      "code": "CS 2710",
+      "title": "Topics in Data Visualization",
+      "instructor": "Pfister, Hanspeter"
+    },
+    {
+      "code": "CS 2760",
+      "title": "Design, Technology, and Social Impact",
+      "instructor": "Gajos, Krzysztof"
+    },
+    {
+      "code": "CS 2780",
+      "title": "Conceptualizing, Building, and Evaluating Usable Novel Interactive Systems",
+      "instructor": "Glassman, Elena"
+    },
+    {
+      "code": "CS 2824",
+      "title": "Foundations of Reinforcement Learning",
+      "instructor": "Brantley, Kiant\u00e9"
+    },
+    {
+      "code": "CS 2860",
+      "title": "Multi-Robot Systems: Control, Communication, and Security",
+      "instructor": "Gil, Stephanie"
+    },
+    {
+      "code": "ECE 50 (formerly ES 50)",
+      "title": "Introduction to Electrical Engineering",
+      "instructor": "Janapa Reddi, Vijay, Loncar, Marko"
+    },
+    {
+      "code": "ECE 145 (formerly ES 145)",
+      "title": "Modern Electric Power Systems",
+      "instructor": "Xie, Le"
+    },
+    {
+      "code": "ECE 146",
+      "title": "Computer Architecture",
+      "instructor": "Brooks, David"
+    },
+    {
+      "code": "ECE 148",
+      "title": "Design of VLSI Circuits and Systems",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "ECE 150 (formerly ES 150)",
+      "title": "Probability with Engineering Applications",
+      "instructor": "Lu, Yue"
+    },
+    {
+      "code": "ECE 151 (formerly ES 151)",
+      "title": "Applied Electromagnetism",
+      "instructor": "Hu, Evelyn"
+    },
+    {
+      "code": "ECE 156 (formerly ES 156)",
+      "title": "Signals and Communication",
+      "instructor": "Calmon, Flavio du Pin"
+    },
+    {
+      "code": "ECE 177 (formerly ES 177)",
+      "title": "Microfabrication Laboratory",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "EPS 244",
+      "title": "Atmospheric Evolution and Habitability of Terrestrial Planets",
+      "instructor": "Wordsworth, Robin"
+    },
+    {
+      "code": "ES 2XX (EE)",
+      "title": "New EE Grad Course",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "ES 24",
+      "title": "Flavor Molecules of Food Fermentation: Exploration and Inquiry",
+      "instructor": "Sorensen, Pia"
+    },
+    {
+      "code": "ES 26",
+      "title": "Humanity and its Futures",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 51",
+      "title": "Computer-Aided Machine Design",
+      "instructor": "Hasanov, Seymur"
+    },
+    {
+      "code": "ES 55",
+      "title": "Fundamentals of Engineering Design",
+      "instructor": "Richardson, Eric"
+    },
+    {
+      "code": "ES 120",
+      "title": "Introduction to the Mechanics of Solids",
+      "instructor": "Vlassak, Joost"
+    },
+    {
+      "code": "ES 123",
+      "title": "Introduction to Fluid Mechanics and Transport Processes",
+      "instructor": "Schiffer, Zachary"
+    },
+    {
+      "code": "ES 159",
+      "title": "Introduction to Robotics",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 183",
+      "title": "Introduction to Heat Transfer",
+      "instructor": "TBD MSME, Instructor"
+    },
+    {
+      "code": "ES 190",
+      "title": "Introduction to Materials Science and Engineering",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "ES 195",
+      "title": "Using First Principles to Reverse-engineer Complex Biological Systems",
+      "instructor": "Cluzel, Philippe"
+    },
+    {
+      "code": "ES 201",
+      "title": "Decision Theory",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "ES 202",
+      "title": "Estimation and Control of Dynamic Systems",
+      "instructor": "Li, Na (Lina)"
+    },
+    {
+      "code": "ES 227",
+      "title": "Medical Device Design",
+      "instructor": "Srinivasan, Shriya, Walsh, Conor"
+    },
+    {
+      "code": "ES 229",
+      "title": "Survey of Energy Technology",
+      "instructor": "Aziz, Michael"
+    },
+    {
+      "code": "ES 230",
+      "title": "Advanced Tissue Engineering",
+      "instructor": "Mooney, David"
+    },
+    {
+      "code": "ES 231",
+      "title": "Energy Technology",
+      "instructor": "Aziz, Michael"
+    },
+    {
+      "code": "ES 234 (J-Term)",
+      "title": "Technology Venture Immersion",
+      "instructor": "Walsh, Conor"
+    },
+    {
+      "code": "ES 247",
+      "title": "Fracture Mechanics",
+      "instructor": "Suo, Zhigang"
+    },
+    {
+      "code": "ES 249",
+      "title": "Advanced Neural Control of Movement",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "ES 257",
+      "title": "Semidefinite Optimization and Relaxation",
+      "instructor": "Yang, Heng (Hank)"
+    },
+    {
+      "code": "ES 258",
+      "title": "Introduction to Bioelectronics",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "ES 259",
+      "title": "Advanced Introduction to Robotics",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 273",
+      "title": "Optics and Photonics",
+      "instructor": "Capasso, Federico"
+    },
+    {
+      "code": "ES 277",
+      "title": "Microfabrication Laboratory",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "ES 291",
+      "title": "Nano Micro Macro: Adaptive Material Laboratory",
+      "instructor": "Aizenberg, Joanna"
+    },
+    {
+      "code": "ES 294",
+      "title": "Humanity and its Futures",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 297",
+      "title": "Professional Writing for Scientists and Engineers",
+      "instructor": "Hoffman, Jenny"
+    },
+    {
+      "code": "ESE 101",
+      "title": "Global Warming Science 101",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "ESE 131",
+      "title": "Introduction to Physical Oceanography and Climate",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "ESE 133",
+      "title": "Atmospheric Chemistry",
+      "instructor": "Jacob, Daniel"
+    },
+    {
+      "code": "ESE 161",
+      "title": "Applied Environmental Toxicology",
+      "instructor": "Sunderland, Elsie"
+    },
+    {
+      "code": "ESE 166",
+      "title": "State-of-the-Art Harvard Climate Observatory and Associated Instrumentation",
+      "instructor": "Anderson, James"
+    },
+    {
+      "code": "PHYSCI 11",
+      "title": "Foundations and Frontiers of Modern Chemistry: A Molecular and Global Perspective",
+      "instructor": "Keutsch, Frank"
+    }
+  ],
+  "f28": [
+    {
+      "code": "AC 275",
+      "title": "Computational Design of Materials",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "AM 10",
+      "title": "Computing with Python for Scientists and Engineers",
+      "instructor": "McCarty, Logan"
+    },
+    {
+      "code": "AM 111",
+      "title": "Introduction to Scientific Computing",
+      "instructor": "Iams, Sarah"
+    },
+    {
+      "code": "AM 115",
+      "title": "Mathematical Modeling",
+      "instructor": "Brenner, Michael"
+    },
+    {
+      "code": "AM 121",
+      "title": "Introduction to Optimization: Models and Methods",
+      "instructor": "Weber, Melanie, Levine, Margo"
+    },
+    {
+      "code": "AM 201",
+      "title": "Physical Mathematics I",
+      "instructor": "Albergo, Michael"
+    },
+    {
+      "code": "AM 205",
+      "title": "Advanced Scientific Computing: Numerical Methods",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 207",
+      "title": "Stochastic Methods in Artificial Intelligence",
+      "instructor": "Koumoutsakos, Petros"
+    },
+    {
+      "code": "AM 210",
+      "title": "Algebraic Fundamentals of Representing Data",
+      "instructor": "Seigal, Anna"
+    },
+    {
+      "code": "AM 215",
+      "title": "Mathematical Modeling for Computational Science",
+      "instructor": "Brenner, Michael"
+    },
+    {
+      "code": "AM 226",
+      "title": "Neural Computation",
+      "instructor": "Pehlevan, Cengiz"
+    },
+    {
+      "code": "AM 254",
+      "title": "Mathematics of High-Dimensional Information Processing and Learning",
+      "instructor": "Lu, Yue"
+    },
+    {
+      "code": "AP 195A",
+      "title": "Introduction to Solid State Physics",
+      "instructor": "Hoffman, Jenny"
+    },
+    {
+      "code": "AP 218",
+      "title": "Electrical, Optical, and Magnetic Properties of Materials",
+      "instructor": "Westervelt, Robert"
+    },
+    {
+      "code": "AP 235",
+      "title": "Chemistry in Materials Science and Engineering",
+      "instructor": "Aizenberg, Joanna"
+    },
+    {
+      "code": "AP 236",
+      "title": "Physical Electrochemistry and its Applications to Sustainable Engineering",
+      "instructor": "Schiffer, Zachary"
+    },
+    {
+      "code": "AP 242",
+      "title": "Introduction to Single-Molecule Biophysics",
+      "instructor": "Prigozhin, Maxim"
+    },
+    {
+      "code": "AP 275",
+      "title": "Computational Design of Materials",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "AP 296",
+      "title": "Mesoscale and Low Dimensional Devices",
+      "instructor": "Ham, Donhee"
+    },
+    {
+      "code": "BE 110",
+      "title": "Signals, Systems, and Control in Bioengineering",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "BE 131",
+      "title": "Neuroengineering",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "CS 50",
+      "title": "Introduction to Computer Science",
+      "instructor": "Malan, David"
+    },
+    {
+      "code": "CS 51",
+      "title": "Abstraction and Design in Computation",
+      "instructor": "Shieber, Stuart"
+    },
+    {
+      "code": "CS 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 1050",
+      "title": "Privacy and Technology",
+      "instructor": "Waldo, James"
+    },
+    {
+      "code": "CS 1200",
+      "title": "Intro to Algorithms, Computability, and Complexity",
+      "instructor": "Anshu, Anurag"
+    },
+    {
+      "code": "CS 1210",
+      "title": "Introduction to Theoretical Computer Science",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 1410",
+      "title": "Computing Hardware",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "CS 1440R",
+      "title": "Networks Design Projects",
+      "instructor": "Kung, H. T."
+    },
+    {
+      "code": "CS 1650",
+      "title": "Data Systems",
+      "instructor": "Idreos, Stratos"
+    },
+    {
+      "code": "CS 1710",
+      "title": "Visualization",
+      "instructor": "Pfister, Hanspeter"
+    },
+    {
+      "code": "CS 1750",
+      "title": "Computer Graphics",
+      "instructor": "Gortler, Steven"
+    },
+    {
+      "code": "CS 1820",
+      "title": "Planning and Learning Methods in AI",
+      "instructor": "Gil, Stephanie"
+    },
+    {
+      "code": "CS 1840",
+      "title": "Reinforcement Learning",
+      "instructor": "Brantley, Kiant\u00e9"
+    },
+    {
+      "code": "CS 2080",
+      "title": "Applied Privacy for Data Science",
+      "instructor": "Vadhan, Salil"
+    },
+    {
+      "code": "CS 2210",
+      "title": "Computational Complexity",
+      "instructor": "Sudan, Madhu"
+    },
+    {
+      "code": "CS 2233",
+      "title": "Quantum Learning Theory",
+      "instructor": "Chen, Sitan"
+    },
+    {
+      "code": "CS 2242",
+      "title": "Probabilistic Analysis and Algorithms",
+      "instructor": "Mitzenmacher, Michael"
+    },
+    {
+      "code": "CS 2261",
+      "title": "Topics in Theory for Society: Algorithmic Fairness",
+      "instructor": "Dwork, Cynthia"
+    },
+    {
+      "code": "CS 2370",
+      "title": "Economic Analysis as a Frontier of Theoretical Computer Science",
+      "instructor": "Gonczarowski, Yannai"
+    },
+    {
+      "code": "CS 2380",
+      "title": "Optimized Democracy",
+      "instructor": "Procaccia, Ariel"
+    },
+    {
+      "code": "CS 2430",
+      "title": "Advanced Computer Networks",
+      "instructor": "Yu, Minlan"
+    },
+    {
+      "code": "CS 2440R",
+      "title": "Networks Design Projects",
+      "instructor": "Kung, H. T."
+    },
+    {
+      "code": "CS 2490R",
+      "title": "Topics in Edge Computing",
+      "instructor": "Janapa Reddi, Vijay"
+    },
+    {
+      "code": "CS 2520R",
+      "title": "Advanced Topics in Programming Languages",
+      "instructor": "Amin, Nada"
+    },
+    {
+      "code": "CS 2540",
+      "title": "Formal Methods for Computer Security",
+      "instructor": "Chong, Stephen"
+    },
+    {
+      "code": "CS 2600R",
+      "title": "Projects and Close Readings in Software Systems",
+      "instructor": "Kohler, Edward"
+    },
+    {
+      "code": "CS 2630",
+      "title": "Systems Security",
+      "instructor": "Mickens, James"
+    },
+    {
+      "code": "CS 2790R",
+      "title": "Research Topics in Human-Computer Interaction",
+      "instructor": "Glassman, Elena"
+    },
+    {
+      "code": "CS 2821R",
+      "title": "Topics in Machine Learning: Interpretability and Explainability",
+      "instructor": "Du, Yilun"
+    },
+    {
+      "code": "CS 2822R",
+      "title": "Topics in Machine Learning: Effective AI Support in Human + AI Settings",
+      "instructor": "Doshi-Velez, Finale"
+    },
+    {
+      "code": "CS 2831",
+      "title": "Computer Vision",
+      "instructor": "Zickler, Todd"
+    },
+    {
+      "code": "CS 2840",
+      "title": "Computational Optimal Transport for Machine Learning",
+      "instructor": "Alvarez-Melis, David"
+    },
+    {
+      "code": "CS 2880",
+      "title": "AI for Social Impact",
+      "instructor": "Tambe, Milind"
+    },
+    {
+      "code": "CS 2881R",
+      "title": "Topics in the Foundations of Machine Learning",
+      "instructor": "Barak, Boaz"
+    },
+    {
+      "code": "CS 2901",
+      "title": "PhD Grad Cohort Research Seminar",
+      "instructor": "Barak, Boaz"
+    },
+    {
+      "code": "ECE 141",
+      "title": "Computing Hardware",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "ECE 152 (formerly ES 152)",
+      "title": "Circuits, Devices, and Transduction",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "ECE 157 (formerly ES 157)",
+      "title": "Biological Signal Processing",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "ECE 158 (formerly ES 158)",
+      "title": "Introduction to Optimal Control and Reinforcement Learning",
+      "instructor": "Yang, Heng (Hank)"
+    },
+    {
+      "code": "ECE 173 (formerly ES 173)",
+      "title": "Introduction to Electronic and Photonic Devices",
+      "instructor": "Hu, Evelyn"
+    },
+    {
+      "code": "ENCE 10",
+      "title": "Gateway to Energy, Climate and Environment",
+      "instructor": "Hau, Lene"
+    },
+    {
+      "code": "EPS 164",
+      "title": "Chemistry for Energy, Climate, and Environment",
+      "instructor": "Martin, Scot"
+    },
+    {
+      "code": "EPS 236",
+      "title": "Environmental Modeling",
+      "instructor": "Wofsy, Steven"
+    },
+    {
+      "code": "ES 53",
+      "title": "Quantitative Physiology as a Basis for Bioengineering",
+      "instructor": "Moyer, Linsey"
+    },
+    {
+      "code": "ES 125",
+      "title": "Mechanical Systems",
+      "instructor": "Wood, Robert"
+    },
+    {
+      "code": "ES 170",
+      "title": "Engineering Quantum Mechanics",
+      "instructor": "Semeghini, Giulia"
+    },
+    {
+      "code": "ES 176",
+      "title": "Introduction to MicroElectroMechanical System",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 181",
+      "title": "Engineering Thermodynamics",
+      "instructor": "Suo, Zhigang"
+    },
+    {
+      "code": "ES 192",
+      "title": "Materials Selection and Design",
+      "instructor": "Hasanov, Seymur"
+    },
+    {
+      "code": "ES 200",
+      "title": "Advanced Engineering Quantum Mechanics",
+      "instructor": "Capasso, Federico"
+    },
+    {
+      "code": "ES 215",
+      "title": "Physical and Economical Operations of Sustainable Energy Systems",
+      "instructor": "Xie, Le"
+    },
+    {
+      "code": "ES 221",
+      "title": "Drug Delivery",
+      "instructor": "Mitragotri, Samir"
+    },
+    {
+      "code": "ES 223",
+      "title": "Neurophysiology and Neural Interfaces",
+      "instructor": "Srinivasan, Shriya"
+    },
+    {
+      "code": "ES 224",
+      "title": "Advanced Biomechanics and Assistive Robotics",
+      "instructor": "Slade, Patrick"
+    },
+    {
+      "code": "ES 225",
+      "title": "Neuroengineering",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "ES 233",
+      "title": "Water, Weather, and Climate",
+      "instructor": "McColl, Kaighin"
+    },
+    {
+      "code": "ES 240",
+      "title": "Solid Mechanics",
+      "instructor": "Vlassak, Joost"
+    },
+    {
+      "code": "ES 250",
+      "title": "Information Theory",
+      "instructor": "Calmon, Flavio du Pin"
+    },
+    {
+      "code": "ES 254",
+      "title": "Mathematics of High-Dimensional Information Processing and Learning",
+      "instructor": "Lu, Yue"
+    },
+    {
+      "code": "ES 266",
+      "title": "Environmental Modeling and Data Analysis",
+      "instructor": "Wofsy, Steven"
+    },
+    {
+      "code": "ES 275",
+      "title": "Integrated Nonlinear Photonics",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "ES 276",
+      "title": "Introduction to MicroElectroMechanical System",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 280",
+      "title": "System Engineering",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 297",
+      "title": "Professional Writing for Scientists and Engineers",
+      "instructor": "Needleman, Daniel"
+    },
+    {
+      "code": "ESE 1XX",
+      "title": "New course proposed",
+      "instructor": "Sunderland, Elsie"
+    },
+    {
+      "code": "ESE 135",
+      "title": "Probing the Deep Blue: Ocean Measurements and Instrumentation",
+      "instructor": "Straneo, Fiamma"
+    },
+    {
+      "code": "ESE 160",
+      "title": "Space Science and Engineering: Theory and Application",
+      "instructor": "Wordsworth, Robin"
+    },
+    {
+      "code": "ESE 163",
+      "title": "Pollution Control in Aquatic Ecosystems",
+      "instructor": "Ulrich, Patrick"
+    },
+    {
+      "code": "ESE 164",
+      "title": "Chemistry for Energy, Climate, and Environment",
+      "instructor": "Martin, Scot"
+    },
+    {
+      "code": "ESE 168",
+      "title": "Human Environmental Data Science: Agriculture, Conflict, and Health",
+      "instructor": "Huybers, Peter"
+    },
+    {
+      "code": "GENED 1104",
+      "title": "Science and Cooking: From Haute Cuisine to Soft Matter Science",
+      "instructor": "Sorensen, Pia"
+    }
+  ],
+  "s29": [
+    {
+      "code": "AM 22A",
+      "title": "Solving and Optimizing",
+      "instructor": "Gortler, Steven"
+    },
+    {
+      "code": "AM 50",
+      "title": "Introduction to Applied Mathematics",
+      "instructor": "Pehlevan, Cengiz"
+    },
+    {
+      "code": "AM 105",
+      "title": "Ordinary and Partial Differential Equations",
+      "instructor": "Levine, Margo"
+    },
+    {
+      "code": "AM 106",
+      "title": "Algebra for Models and Data",
+      "instructor": "Seigal, Anna"
+    },
+    {
+      "code": "AM 107",
+      "title": "Graph Theory and Combinatorics",
+      "instructor": "Valiant, Leslie"
+    },
+    {
+      "code": "AM 108",
+      "title": "Nonlinear Dynamical Systems",
+      "instructor": "Iams, Sarah"
+    },
+    {
+      "code": "AM 109",
+      "title": "Introduction to PDEs and their Applications",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 115",
+      "title": "Mathematical Modeling",
+      "instructor": "Kuang, Zhiming"
+    },
+    {
+      "code": "AM 120",
+      "title": "Applied Linear Algebraand Big Data",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "AM 202",
+      "title": "Introduction to PDEs and their Applications",
+      "instructor": "Trefethen, Nick"
+    },
+    {
+      "code": "AM 220",
+      "title": "Geometric Methods for Machine Learning",
+      "instructor": "Weber, Melanie"
+    },
+    {
+      "code": "AM 231",
+      "title": "Decision Theory",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "AP 195B",
+      "title": "Introduction to Quantum Materials and Devices",
+      "instructor": "Westervelt, Robert"
+    },
+    {
+      "code": "AP 216",
+      "title": "Quantum and Classical Electromagnetic Interaction with Matter",
+      "instructor": "Ham, Donhee"
+    },
+    {
+      "code": "AP 276",
+      "title": "Platforms for Quantum Science",
+      "instructor": "Semeghini, Giulia"
+    },
+    {
+      "code": "AP 291",
+      "title": "Electron Microscopy Laboratory",
+      "instructor": "Aizenberg, Joanna"
+    },
+    {
+      "code": "BE 124",
+      "title": "Biomechanics of Movement and Assistive Robotics",
+      "instructor": "Slade, Patrick"
+    },
+    {
+      "code": "BE 125",
+      "title": "Tissue Engineering",
+      "instructor": "Mooney, David"
+    },
+    {
+      "code": "BE 129",
+      "title": "Introduction to Bioelectronics",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "BE 130",
+      "title": "Neural Control of Movement",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "CS 1XX",
+      "title": "placeholder for new course",
+      "instructor": "Chen, Sitan"
+    },
+    {
+      "code": "CS 2XX",
+      "title": "placeholder for new grad course",
+      "instructor": "Idreos, Stratos"
+    },
+    {
+      "code": "CS 20",
+      "title": "Discrete Mathematics for Computer Science",
+      "instructor": "Nesson, Rebecca"
+    },
+    {
+      "code": "CS 32",
+      "title": "Computational Thinking and Problem Solving",
+      "instructor": "Smith, Michael"
+    },
+    {
+      "code": "CS 37",
+      "title": "Incentives in the Wild: from Tanking in Sports to Mining Cryptocurrencies",
+      "instructor": "Gonczarowski, Yannai"
+    },
+    {
+      "code": "CS 50 (Spring Offering)",
+      "title": "Introduction to Computer Science (for concentrators unable to take in fall term)",
+      "instructor": "Malan, David"
+    },
+    {
+      "code": "CS 61",
+      "title": "Systems Programming and Machine Organization",
+      "instructor": "Kohler, Edward"
+    },
+    {
+      "code": "CS 91R",
+      "title": "Supervised Reading and Research",
+      "instructor": "Hesterberg, Adam"
+    },
+    {
+      "code": "CS 96",
+      "title": "System Design Projects",
+      "instructor": "Tambe, Milind"
+    },
+    {
+      "code": "CS 1200",
+      "title": "Intro to Algorithms, Computability, and Complexity",
+      "instructor": "Vadhan, Salil"
+    },
+    {
+      "code": "CS 1240",
+      "title": "Data Structures and Algorithms",
+      "instructor": "Hesterberg, Adam, Mitzenmacher, Michael"
+    },
+    {
+      "code": "CS 1260",
+      "title": "Fairness and Privacy: Perspectives of Law and Probability",
+      "instructor": "Dwork, Cynthia"
+    },
+    {
+      "code": "CS 1280",
+      "title": "Convex Optimization and Applications in Machine Learning",
+      "instructor": "Chen, Yiling"
+    },
+    {
+      "code": "CS 1360",
+      "title": "Economics and Computation",
+      "instructor": "Procaccia, Ariel"
+    },
+    {
+      "code": "CS 1450",
+      "title": "Networking at Scale",
+      "instructor": "Yu, Minlan"
+    },
+    {
+      "code": "CS 1520",
+      "title": "Programming Languages",
+      "instructor": "Amin, Nada"
+    },
+    {
+      "code": "CS 1530",
+      "title": "Compilers",
+      "instructor": "Chong, Stephen"
+    },
+    {
+      "code": "CS 1610",
+      "title": "Operating Systems",
+      "instructor": "Mickens, James"
+    },
+    {
+      "code": "CS 1780",
+      "title": "Engineering Usable Interactive Systems",
+      "instructor": "Glassman, Elena"
+    },
+    {
+      "code": "CS 1810",
+      "title": "Machine Learning",
+      "instructor": "Alvarez-Melis, David, Doshi-Velez, Finale"
+    },
+    {
+      "code": "CS 1870",
+      "title": "Introduction to Computational Linguistics and Natural-language Processing",
+      "instructor": "Shieber, Stuart"
+    },
+    {
+      "code": "CS 2280",
+      "title": "Computational Learning Theory",
+      "instructor": "Valiant, Leslie"
+    },
+    {
+      "code": "CS 2420",
+      "title": "Computing at Scale",
+      "instructor": "Kung, H. T."
+    },
+    {
+      "code": "CS 2620",
+      "title": "Introduction to Distributed Computing",
+      "instructor": "Waldo, James"
+    },
+    {
+      "code": "CS 2640",
+      "title": "Modern Computer Storage",
+      "instructor": "Yang, Juncheng"
+    },
+    {
+      "code": "CS 2710",
+      "title": "Topics in Data Visualization",
+      "instructor": "Pfister, Hanspeter"
+    },
+    {
+      "code": "CS 2780",
+      "title": "Conceptualizing, Building, and Evaluating Usable Novel Interactive Systems",
+      "instructor": "Glassman, Elena"
+    },
+    {
+      "code": "CS 2824",
+      "title": "Foundations of Reinforcement Learning",
+      "instructor": "Brantley, Kiant\u00e9"
+    },
+    {
+      "code": "CS 2860",
+      "title": "Multi-Robot Systems: Control, Communication, and Security",
+      "instructor": "Gil, Stephanie"
+    },
+    {
+      "code": "ECE 50 (formerly ES 50)",
+      "title": "Introduction to Electrical Engineering",
+      "instructor": "Janapa Reddi, Vijay"
+    },
+    {
+      "code": "ECE 143 (formerly ES 143)",
+      "title": "Computer Vision",
+      "instructor": "Zickler, Todd"
+    },
+    {
+      "code": "ECE 145 (formerly ES 145)",
+      "title": "Modern Electric Power Systems",
+      "instructor": "Xie, Le"
+    },
+    {
+      "code": "ECE 150 (formerly ES 150)",
+      "title": "Probability with Engineering Applications",
+      "instructor": "Lu, Yue"
+    },
+    {
+      "code": "ECE 151 (formerly ES 151)",
+      "title": "Applied Electromagnetism",
+      "instructor": "Hu, Evelyn"
+    },
+    {
+      "code": "ECE 156 (formerly ES 156)",
+      "title": "Signals and Communication",
+      "instructor": "Calmon, Flavio du Pin"
+    },
+    {
+      "code": "ECE 177 (formerly ES 177)",
+      "title": "Microfabrication Laboratory",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "EPS 237",
+      "title": "Planetary Radiation and Climate",
+      "instructor": "Wordsworth, Robin"
+    },
+    {
+      "code": "ES 1XX",
+      "title": "placeholder for new course",
+      "instructor": "Srinivasan, Shriya"
+    },
+    {
+      "code": "ES 2XX (EE)",
+      "title": "New EE Grad Course",
+      "instructor": "Yang, Woodward"
+    },
+    {
+      "code": "ES 24",
+      "title": "Flavor Molecules of Food Fermentation: Exploration and Inquiry",
+      "instructor": "Sorensen, Pia"
+    },
+    {
+      "code": "ES 26",
+      "title": "Humanity and its Futures",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 51",
+      "title": "Computer-Aided Machine Design",
+      "instructor": "Hasanov, Seymur"
+    },
+    {
+      "code": "ES 112",
+      "title": "Thermodynamics",
+      "instructor": "Martin, Scot"
+    },
+    {
+      "code": "ES 120",
+      "title": "Introduction to the Mechanics of Solids",
+      "instructor": "Vlassak, Joost"
+    },
+    {
+      "code": "ES 123",
+      "title": "Introduction to Fluid Mechanics and Transport Processes",
+      "instructor": "Schiffer, Zachary"
+    },
+    {
+      "code": "ES 159",
+      "title": "Introduction to Robotics",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 190",
+      "title": "Introduction to Materials Science and Engineering",
+      "instructor": "Kozinsky, Boris"
+    },
+    {
+      "code": "ES 201",
+      "title": "Decision Theory",
+      "instructor": "Ba, Demba"
+    },
+    {
+      "code": "ES 227",
+      "title": "Medical Device Design",
+      "instructor": "Moyer, Linsey, Walsh, Conor"
+    },
+    {
+      "code": "ES 230",
+      "title": "Advanced Tissue Engineering",
+      "instructor": "Mooney, David"
+    },
+    {
+      "code": "ES 234 (J-Term)",
+      "title": "Technology Venture Immersion",
+      "instructor": "Walsh, Conor"
+    },
+    {
+      "code": "ES 241",
+      "title": "Advanced Elasticity",
+      "instructor": "Suo, Zhigang"
+    },
+    {
+      "code": "ES 249",
+      "title": "Advanced Neural Control of Movement",
+      "instructor": "Smith, Maurice"
+    },
+    {
+      "code": "ES 255",
+      "title": "High Performance Electronic-Photonic Integrated Circuits",
+      "instructor": "Hills, Gage"
+    },
+    {
+      "code": "ES 257",
+      "title": "Semidefinite Optimization and Relaxation",
+      "instructor": "Yang, Heng (Hank)"
+    },
+    {
+      "code": "ES 258",
+      "title": "Introduction to Bioelectronics",
+      "instructor": "Liu, Jia"
+    },
+    {
+      "code": "ES 259",
+      "title": "Advanced Introduction to Robotics",
+      "instructor": "Howe, Robert"
+    },
+    {
+      "code": "ES 273",
+      "title": "Optics and Photonics",
+      "instructor": "Capasso, Federico"
+    },
+    {
+      "code": "ES 277",
+      "title": "Microfabrication Laboratory",
+      "instructor": "Yang, Kiyoul"
+    },
+    {
+      "code": "ES 294",
+      "title": "Humanity and its Futures",
+      "instructor": "Habbal, Fawwaz"
+    },
+    {
+      "code": "ES 297",
+      "title": "Professional Writing for Scientists and Engineers",
+      "instructor": "Hoffman, Jenny"
+    },
+    {
+      "code": "ESE 50",
+      "title": "The Fluid Earth: Oceans, Atmosphere, Climate, and Environment",
+      "instructor": "Straneo, Fiamma"
+    },
+    {
+      "code": "ESE 101",
+      "title": "Global Warming Science 101",
+      "instructor": "Tziperman, Eli"
+    },
+    {
+      "code": "ESE 133",
+      "title": "Atmospheric Chemistry",
+      "instructor": "Jacob, Daniel"
+    },
+    {
+      "code": "ESE 161",
+      "title": "Applied Environmental Toxicology",
+      "instructor": "Sunderland, Elsie"
+    },
+    {
+      "code": "ESE 166",
+      "title": "State-of-the-Art Harvard Climate Observatory and Associated Instrumentation",
+      "instructor": "Anderson, James"
+    },
+    {
+      "code": "PHYSCI 11",
+      "title": "Foundations and Frontiers of Modern Chemistry: A Molecular and Global Perspective",
+      "instructor": "Keutsch, Frank"
+    }
+  ]
+}

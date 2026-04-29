@@ -1,0 +1,612 @@
+{
+  "AC 215": [
+    "adv"
+  ],
+  "AC 221": [
+    "world"
+  ],
+  "AC 295": [
+    "world",
+    "adv"
+  ],
+  "AIT Algorithms and Data Structures": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "AIT Deep learning": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "AIT Theory of Computing": [
+    "formal",
+    "complim",
+    "adv"
+  ],
+  "AM 107": [
+    "formal",
+    "discmath",
+    "adv"
+  ],
+  "AM 115": [
+    "world"
+  ],
+  "AM 220": [
+    "formal",
+    "ai",
+    "adv"
+  ],
+  "APMTH 22a": [
+    "linalg"
+  ],
+  "CS 1050": [
+    "adv"
+  ],
+  "CS 1060": [
+    "prog2",
+    "adv"
+  ],
+  "CS 1070": [
+    "prog1",
+    "adv"
+  ],
+  "CS 1090A": [
+    "prog1",
+    "world",
+    "adv"
+  ],
+  "CS 1090B": [
+    "prog1",
+    "world",
+    "adv"
+  ],
+  "CS 1200": [
+    "formal",
+    "complim",
+    "alg",
+    "adv"
+  ],
+  "CS 1210": [
+    "formal",
+    "complim",
+    "adv"
+  ],
+  "CS 1240": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "CS 1251": [
+    "formal",
+    "adv"
+  ],
+  "CS 1260": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 1261": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 1270": [
+    "formal",
+    "adv"
+  ],
+  "CS 1280": [
+    "formal",
+    "adv"
+  ],
+  "CS 1360": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 1410": [
+    "systems",
+    "adv"
+  ],
+  "CS 1411": [
+    "systems",
+    "adv"
+  ],
+  "CS 1430": [
+    "adv"
+  ],
+  "CS 1440R": [
+    "adv"
+  ],
+  "CS 1450": [
+    "systems",
+    "adv"
+  ],
+  "CS 1480": [
+    "adv"
+  ],
+  "CS 1520": [
+    "formal",
+    "adv"
+  ],
+  "CS 1530": [
+    "prog2",
+    "systems",
+    "adv"
+  ],
+  "CS 1610": [
+    "prog2",
+    "systems",
+    "adv"
+  ],
+  "CS 1650": [
+    "prog2",
+    "systems",
+    "adv"
+  ],
+  "CS 1710": [
+    "world",
+    "adv"
+  ],
+  "CS 1750": [
+    "world",
+    "adv"
+  ],
+  "CS 1780": [
+    "prog2",
+    "world",
+    "adv"
+  ],
+  "CS 179": [
+    "adv"
+  ],
+  "CS 1810": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 1820": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 1840": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 1870": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 1890": [
+    "adv"
+  ],
+  "CS 1910": [
+    "adv"
+  ],
+  "CS 1970": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 20": [
+    "formal",
+    "discmath"
+  ],
+  "CS 2050": [
+    "adv"
+  ],
+  "CS 2080": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 2210": [
+    "formal",
+    "complim",
+    "adv"
+  ],
+  "CS 2211": [
+    "formal",
+    "adv"
+  ],
+  "CS 2212": [
+    "world",
+    "adv"
+  ],
+  "CS 2231": [
+    "formal",
+    "adv"
+  ],
+  "CS 2232": [
+    "formal",
+    "complim",
+    "adv"
+  ],
+  "CS 2233": [
+    "formal",
+    "adv"
+  ],
+  "CS 224": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "CS 2241": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "CS 2242": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "CS 2243": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "CS 2252": [
+    "formal",
+    "adv"
+  ],
+  "CS 2253": [
+    "formal",
+    "adv"
+  ],
+  "CS 2260": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 2261": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 2280": [
+    "formal",
+    "complim",
+    "ai",
+    "adv"
+  ],
+  "CS 2281R": [
+    "world",
+    "adv",
+    "formal"
+  ],
+  "CS 229BR": [
+    "world",
+    "adv",
+    "formal"
+  ],
+  "CS 229R": [
+    "formal",
+    "adv"
+  ],
+  "CS 2340": [
+    "formal",
+    "adv"
+  ],
+  "CS 2360r": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 2370": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 2380": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "CS 2411": [
+    "systems",
+    "adv"
+  ],
+  "CS 2420": [
+    "systems",
+    "adv"
+  ],
+  "CS 2430": [
+    "systems",
+    "adv"
+  ],
+  "CS 2470r": [
+    "systems",
+    "adv"
+  ],
+  "CS 2490r": [
+    "systems",
+    "world",
+    "adv"
+  ],
+  "CS 2520r": [
+    "adv"
+  ],
+  "CS 2540": [
+    "formal",
+    "adv"
+  ],
+  "CS 2600r": [
+    "adv"
+  ],
+  "CS 2610": [
+    "systems",
+    "adv"
+  ],
+  "CS 2620": [
+    "systems",
+    "adv"
+  ],
+  "CS 2630": [
+    "systems",
+    "adv"
+  ],
+  "CS 2650": [
+    "systems",
+    "adv"
+  ],
+  "CS 2710": [
+    "adv"
+  ],
+  "CS 2760": [
+    "adv"
+  ],
+  "CS 2780": [
+    "prog2",
+    "world",
+    "adv"
+  ],
+  "CS 2790r": [
+    "adv"
+  ],
+  "CS 2810": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 2821r": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 2822r": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 2823r": [
+    "ai",
+    "adv"
+  ],
+  "CS 2824": [
+    "formal",
+    "ai",
+    "adv"
+  ],
+  "CS 2831": [
+    "world",
+    "adv"
+  ],
+  "CS 2840": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 2860": [
+    "world",
+    "adv"
+  ],
+  "CS 2871": [
+    "adv"
+  ],
+  "CS 2880": [
+    "world",
+    "adv"
+  ],
+  "CS 2881r": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "CS 2890": [
+    "world",
+    "adv"
+  ],
+  "CS 32": [
+    "prog1"
+  ],
+  "CS 37": [
+    "world"
+  ],
+  "CS 50": [
+    "prog1"
+  ],
+  "CS 51": [
+    "prog2"
+  ],
+  "CS 61": [
+    "prog2",
+    "systems"
+  ],
+  "ECON 2070": [
+    "formal",
+    "world",
+    "adv"
+  ],
+  "ES 143": [
+    "world"
+  ],
+  "ES 150": [
+    "prob"
+  ],
+  "MATH 101": [
+    "formal",
+    "discmath"
+  ],
+  "MATH 152": [
+    "formal",
+    "discmath"
+  ],
+  "MATH 154": [
+    "prob"
+  ],
+  "MATH 1a": [
+    "calc"
+  ],
+  "MATH 1b": [
+    "calc"
+  ],
+  "MATH 21a": [],
+  "MATH 21b": [
+    "linalg"
+  ],
+  "MATH 22a": [
+    "linalg"
+  ],
+  "MATH 22b": [
+    "linalg"
+  ],
+  "MATH 23C": [
+    "discmath"
+  ],
+  "MATH 23a": [
+    "linalg"
+  ],
+  "MATH 25a": [
+    "linalg"
+  ],
+  "MATH 55a": [
+    "linalg"
+  ],
+  "MATH Ma": [
+    "calc"
+  ],
+  "MATH Mb": [
+    "calc"
+  ],
+  "MIT 21M.387": [
+    "world"
+  ],
+  "MIT 6.1040": [
+    "adv"
+  ],
+  "MIT 6.1060": [
+    "systems",
+    "adv"
+  ],
+  "MIT 6.3900": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "MIT 6.4120": [
+    "adv"
+  ],
+  "MIT 6.5210": [
+    "formal",
+    "alg",
+    "intalg",
+    "adv"
+  ],
+  "MIT 6.5310": [
+    "formal",
+    "adv"
+  ],
+  "MIT 6.5410": [
+    "formal",
+    "complim",
+    "adv"
+  ],
+  "MIT 6.5610": [
+    "adv"
+  ],
+  "MIT 6.5620": [
+    "formal",
+    "adv"
+  ],
+  "MIT 6.5660": [
+    "systems",
+    "adv"
+  ],
+  "MIT 6.5840": [
+    "prog2",
+    "systems",
+    "adv"
+  ],
+  "MIT 6.5940": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "MIT 6.7320": [
+    "adv"
+  ],
+  "MIT 6.7900": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "MIT 6.7960": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "MIT 6.8200": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "MIT 6.8611": [
+    "world",
+    "ai",
+    "adv"
+  ],
+  "MIT 8.370": [
+    "adv"
+  ],
+  "MIT 9.19": [
+    "world",
+    "adv"
+  ],
+  "Oxford Automata, Logic, and Games": [
+    "formal",
+    "adv"
+  ],
+  "Oxford Computer Architecture": [
+    "systems"
+  ],
+  "PHY 123b": [
+    "systems"
+  ],
+  "PHY 260a": [
+    "formal",
+    "adv"
+  ],
+  "PHY 260b": [
+    "formal",
+    "adv"
+  ],
+  "STAT 110": [
+    "prob"
+  ],
+  "STAT 111": [
+    "prob"
+  ],
+  "STAT 195": [
+    "world"
+  ]
+}

@@ -1,0 +1,23 @@
+:root {
+  --bg: #faf9f7;
+  --bg2: #f2efe9;
+  --bg3: #e8e3da;
+  --bg4: #ddd7cc;
+  --crimson: #9b1b2a;
+  --crimson2: #7d1522;
+  --crimson-dim: rgba(155, 27, 42, 0.07);
+  --crimson-dim2: rgba(155, 27, 42, 0.04);
+  --border: #dbd4c8;
+  --border2: #ccc3b4;
+  --text1: #1c1814;
+  --text2: #56504a;
+  --text3: #9c9088;
+  --green: #1a5c34;
+  --amber: #7a5200;
+  --teal: #135448;
+  --blue: #153a6a;
+  --font: 'Open Sans', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --r: 5px;
+  --r-lg: 8px;
+}

@@ -1,0 +1,1648 @@
+[
+  {
+    "id": "2268_11897",
+    "code": "CS 1050",
+    "title": "Privacy and Technology",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Jim Waldo"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_18889",
+    "code": "CS 1066",
+    "title": "Build at the Speed of Thought",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Michael Smith"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11910",
+    "code": "CS 1090a",
+    "title": "Data Science 1: Introduction to Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "10:30",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Pavlos Protopapas",
+      "Natesh Sivasubramonia Pillai"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11492",
+    "code": "CS 109a",
+    "title": "Data Science 1: Introduction to Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "10:30",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Pavlos Protopapas",
+      "Natesh Sivasubramonia Pillai"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14353",
+    "code": "CS 111",
+    "title": "Introduction to Scientific Computing",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "10:30",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Sarah Iams"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12285",
+    "code": "CS 1200",
+    "title": "Introduction to Algorithms and their Limitations",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Anurag Anshu",
+      "Rebecca Nesson"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11905",
+    "code": "CS 1210",
+    "title": "Introduction to Theoretical Computer Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Madhu Sudan"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_18890",
+    "code": "CS 1251",
+    "title": "Introduction to Graph Theory",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Adam Hesterberg"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_18818",
+    "code": "CS 141",
+    "title": "Computing Hardware",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Woodward Yang"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_13332",
+    "code": "CS 1410",
+    "title": "Computing Hardware",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Woodward Yang"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11961",
+    "code": "CS 152",
+    "title": "Circuits, Devices, and Transduction",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Gage Hills"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11909",
+    "code": "CS 1710",
+    "title": "Visualization",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Hanspeter Pfister"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14816",
+    "code": "CS 1750",
+    "title": "Computer Graphics",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Steven Gortler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14315",
+    "code": "CS 1820",
+    "title": "Planning and Learning Methods in AI",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Stephanie Gil"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_16976",
+    "code": "CS 1840",
+    "title": "Introduction to Reinforcement Learning",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Kiante Brantley"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_18609",
+    "code": "CS 2070",
+    "title": "A Computer Science Toolbox for Modern Economic Theory",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "13:30",
+    "end": "14:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Yannai Gonczarowski"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11851",
+    "code": "CS 209a",
+    "title": "Data Science 1: Introduction to Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "10:30",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Pavlos Protopapas",
+      "Natesh Sivasubramonia Pillai"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17003",
+    "code": "CS 2242",
+    "title": "Probabilistic Analysis and Algorithms",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Michael Mitzenmacher"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17001",
+    "code": "CS 2243",
+    "title": "Algorithms for Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Sitan Chen"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14317",
+    "code": "CS 2360r",
+    "title": "Topics at the Interface between Computer Science and Economics",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Yiling Chen"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17014",
+    "code": "CS 2370",
+    "title": "Economic Analysis as a Frontier of Theoretical Computer Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "13:30",
+    "end": "14:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Yannai Gonczarowski"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14318",
+    "code": "CS 2380",
+    "title": "Optimized Democracy",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Ariel Procaccia"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12292",
+    "code": "CS 2420",
+    "title": "Computing at Scale",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "H. Kung"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17015",
+    "code": "CS 2430",
+    "title": "Advanced Computer Networks",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Minlan Yu"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14319",
+    "code": "CS 2470r",
+    "title": "Advanced Topics in Computer Architecture",
+    "days": [
+      "Fri"
+    ],
+    "start": "09:00",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "David Brooks"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11914",
+    "code": "CS 2520r",
+    "title": "Advanced Topics in Programming Languages",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Nada Amin"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_19659",
+    "code": "CS 2630",
+    "title": "Systems Security",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "James Mickens"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_16932",
+    "code": "CS 268cr",
+    "title": "Non-equilibrium Dynamics and Computation",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:00",
+    "end": "16:15",
+    "term": "2026 Fall",
+    "instructors": [
+      "Jordan Cotler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12484",
+    "code": "CS 2790r",
+    "title": "Research Topics in Human-Computer Interaction",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17018",
+    "code": "CS 2822r",
+    "title": "Topics in Machine Learning: Effective AI Support in Human+AI Settings",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Finale Doshi-Velez"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17019",
+    "code": "CS 2831",
+    "title": "Advanced Computer Vision",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Todd Zickler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_17020",
+    "code": "CS 2880",
+    "title": "AI for Social Impact",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Milind Tambe"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_15244",
+    "code": "CS 2881r",
+    "title": "Topics in Foundations of ML: AI Alignment and Safety",
+    "days": [
+      "Thu"
+    ],
+    "start": "15:45",
+    "end": "18:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Boaz Barak"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12299",
+    "code": "CS 2901",
+    "title": "Seminar on Effective Research Practices and Academic Culture",
+    "days": [
+      "Fri"
+    ],
+    "start": "09:45",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Boaz Barak"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "",
+    "code": "CS 2990r",
+    "title": "Special Topics in Computer Science",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Michael Smith",
+      "Kiante Brantley",
+      "Yiling Chen",
+      "Stephen Chong",
+      "Steven Gortler",
+      "Cynthia Dwork",
+      "Jim Waldo",
+      "Boaz Barak",
+      "Elena Glassman",
+      "Minlan Yu",
+      "Nada Amin",
+      "Hima Lakkaraju",
+      "Juncheng Yang",
+      "Sitan Chen",
+      "Stratos Idreos",
+      "James Mickens",
+      "David Parkes",
+      "Hanspeter Pfister",
+      "Eddie Kohler",
+      "Susan Murphy",
+      "Stephanie Gil",
+      "Sham Kakade",
+      "Ariel Procaccia",
+      "Finale Doshi-Velez",
+      "Anurag Anshu",
+      "Michael Mitzenmacher",
+      "Stuart Shieber",
+      "Krzysztof Gajos",
+      "Milind Tambe",
+      "Yannai Gonczarowski",
+      "Salil Vadhan",
+      "Madhu Sudan",
+      "Leslie Valiant",
+      "David Brooks",
+      "Yilun Du",
+      "David Alvarez Melis"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12076",
+    "code": "CS 50",
+    "title": "Introduction to Computer Science",
+    "days": [
+      "Mon"
+    ],
+    "start": "13:30",
+    "end": "16:15",
+    "term": "2026 Fall",
+    "instructors": [
+      "David J. Malan"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_16977",
+    "code": "CS 51",
+    "title": "Abstraction and Design in Computation",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Fall",
+    "instructors": [
+      "Stephen Chong"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11898",
+    "code": "CS 61",
+    "title": "Systems Programming and Machine Organization",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Eddie Kohler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_14312",
+    "code": "CS 79",
+    "title": "Design of Useful and Usable Interactive Systems",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Fall",
+    "instructors": [
+      "Krzysztof Gajos"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11888",
+    "code": "CS 91r",
+    "title": "Supervised Reading and Research",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Stephen Chong",
+      "Adam Hesterberg",
+      "Eddie Kohler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12922",
+    "code": "MATH 1a",
+    "title": "Introduction to Calculus",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Hannah Constantin"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12931",
+    "code": "MATH 1b",
+    "title": "Integration, Series and Differential Equations",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Charlotte Trainor"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12944",
+    "code": "MATH 21a",
+    "title": "Multivariable Calculus",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Eva Politou"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12953",
+    "code": "MATH 21b",
+    "title": "Linear Algebra and Differential Equations",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Erica Dinkins"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_11604",
+    "code": "MATH 22a",
+    "title": "Vector Calculus and Linear Algebra I",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "12:00",
+    "end": "13:15",
+    "term": "2026 Fall",
+    "instructors": [
+      "Philip Wood"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_10473",
+    "code": "MATH 25a",
+    "title": "Theoretical Linear Algebra and Real Analysis I",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "13:30",
+    "end": "14:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Seraphina Lee"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_10567",
+    "code": "MATH 55a",
+    "title": "Studies in Algebra and Group Theory",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "10:30",
+    "end": "11:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Joseph D. Harris"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_12853",
+    "code": "MATH Ma",
+    "title": "Introduction to Functions and Calculus I",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Fall",
+    "instructors": [
+      "Kate Penner"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2268_10797",
+    "code": "STAT 110",
+    "title": "Introduction to Probability",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "13:30",
+    "end": "14:45",
+    "term": "2026 Fall",
+    "instructors": [
+      "Joseph Blitzstein"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_17154",
+    "code": "APMTH 22a",
+    "title": "Solving and Optimizing",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Steven Gortler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_14177",
+    "code": "CS 1",
+    "title": "Great Ideas in Computer Science",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "10:30",
+    "end": "11:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "Henry Leitner"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12099",
+    "code": "CS 1090b",
+    "title": "Data Science 2: Advanced Topics in Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Pavlos Protopapas",
+      "Kevin A. Rader"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_11484",
+    "code": "CS 109b",
+    "title": "Data Science 2: Advanced Topics in Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Pavlos Protopapas",
+      "Kevin A. Rader"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15646",
+    "code": "CS 1200",
+    "title": "Introduction to Algorithms and their Limitations",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Anurag Anshu"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12092",
+    "code": "CS 1240",
+    "title": "Data Structures and Algorithms",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Madhu Sudan",
+      "Adam Hesterberg"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_17523",
+    "code": "CS 1261",
+    "title": "Privacy, Fairness, and Validity Through the Lens of Theoretical CS",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Cynthia Dwork"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15648",
+    "code": "CS 1280",
+    "title": "Convex Optimization and Applications in Machine Learning",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Yiling Chen"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_14365",
+    "code": "CS 1360",
+    "title": "Economics and Computation",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Ariel Procaccia"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15649",
+    "code": "CS 1411",
+    "title": "Computer Architecture",
+    "days": [
+      "Fri"
+    ],
+    "start": "09:00",
+    "end": "11:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "David Brooks"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_20055",
+    "code": "CS 1440r",
+    "title": "Networks Design Projects",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "H. Kung"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15650",
+    "code": "CS 1480",
+    "title": "Design of VLSI Circuits and Systems",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12094",
+    "code": "CS 1520",
+    "title": "Programming Languages",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Nada Amin"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13149",
+    "code": "CS 1610",
+    "title": "Operating Systems",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "James Mickens"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15653",
+    "code": "CS 1780",
+    "title": "Usable Interactive Systems",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Elena Glassman"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12095",
+    "code": "CS 1810",
+    "title": "Machine Learning",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "David Alvarez Melis",
+      "Yilun Du"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13015",
+    "code": "CS 1960",
+    "title": "Designing K\u201312 Computer Science Learning Experiences",
+    "days": [
+      "Wed"
+    ],
+    "start": "09:00",
+    "end": "11:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "Karen Brennan"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12091",
+    "code": "CS 20",
+    "title": "Discrete Mathematics for Computer Science",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Rebecca Nesson"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12100",
+    "code": "CS 2050",
+    "title": "High Performance Computing for Science and Engineering",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Chuck Witt"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12036",
+    "code": "CS 209b",
+    "title": "Data Science 2: Advanced Topics in Data Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Pavlos Protopapas",
+      "Kevin A. Rader"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15654",
+    "code": "CS 2212",
+    "title": "Biology and Complexity",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Leslie Valiant"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15655",
+    "code": "CS 2252",
+    "title": "Spectral Graph Theory in Computer Science",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Salil Vadhan"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_17728",
+    "code": "CS 2253",
+    "title": "Seminar on Pseudorandomness & High-Dimensional Expanders",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Salil Vadhan"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_21112",
+    "code": "CS 2411",
+    "title": "Advanced Computer Architecture",
+    "days": [
+      "Fri"
+    ],
+    "start": "09:00",
+    "end": "11:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "David Brooks"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_20054",
+    "code": "CS 2440r",
+    "title": "Networks Design Projects",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "H. Kung"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15658",
+    "code": "CS 2480",
+    "title": "Advanced Design of VLSI Circuits and Systems",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13650",
+    "code": "CS 2540",
+    "title": "Formal Methods for Computer Security",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Stephen Chong"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_21290",
+    "code": "CS 2620",
+    "title": "Distributed Computing",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Eddie Kohler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_20921",
+    "code": "CS 2640",
+    "title": "Modern Storage Systems",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Juncheng Yang"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_14118",
+    "code": "CS 2650",
+    "title": "Big Data Systems",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Stratos Idreos"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_20305",
+    "code": "CS 2710",
+    "title": "Topics in Data Visualization",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Hanspeter Pfister"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15659",
+    "code": "CS 2760",
+    "title": "Design, Technology, and Social Impact",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "09:45",
+    "end": "11:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Krzysztof Gajos"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15660",
+    "code": "CS 2780",
+    "title": "Conceptualizing, Building, and Evaluating Usable Novel Interactive Systems",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Elena Glassman"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_21230",
+    "code": "CS 2824",
+    "title": "Foundations of Reinforcement Learning",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "12:45",
+    "end": "14:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Kiante Brantley",
+      "Sham Kakade"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_19328",
+    "code": "CS 2860",
+    "title": "Multi-Robot Systems: Control, Communication, and Security",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Stephanie Gil"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15661",
+    "code": "CS 2880",
+    "title": "AI for Social Impact",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "14:15",
+    "end": "15:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Milind Tambe"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12574",
+    "code": "CS 2902",
+    "title": "Seminar on Effective Research Practices and Academic Culture",
+    "days": [
+      "Fri"
+    ],
+    "start": "09:45",
+    "end": "11:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "Yiling Chen"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "",
+    "code": "CS 2990r",
+    "title": "Special Topics in Computer Science",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "Milind Tambe",
+      "Jim Waldo",
+      "Salil Vadhan",
+      "Michael Mitzenmacher",
+      "Anurag Anshu",
+      "Finale Doshi-Velez",
+      "Yiling Chen",
+      "Steven Gortler",
+      "Nada Amin",
+      "Kiante Brantley",
+      "Minlan Yu",
+      "David Brooks",
+      "David Parkes",
+      "Juncheng Yang",
+      "Krzysztof Gajos",
+      "Stuart Shieber",
+      "Ariel Procaccia",
+      "Sham Kakade",
+      "Stephanie Gil",
+      "Eddie Kohler",
+      "Hanspeter Pfister",
+      "James Mickens",
+      "Stratos Idreos",
+      "Hima Lakkaraju",
+      "Elena Glassman",
+      "Boaz Barak",
+      "Yilun Du",
+      "Michael Smith",
+      "Susan Murphy",
+      "Fernanda Viegas",
+      "Cynthia Dwork",
+      "Leslie Valiant",
+      "Yannai Gonczarowski",
+      "Madhu Sudan",
+      "Stephen Chong",
+      "Sitan Chen",
+      "Martin Wattenberg",
+      "David Alvarez Melis"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12698",
+    "code": "CS 32",
+    "title": "Computational Thinking and Problem Solving",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "13:30",
+    "end": "14:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "Kitty Ascrizzi"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "",
+    "code": "CS 50",
+    "title": "Introduction to Computer Science",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "David J. Malan",
+      "Kelly Ding"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12699",
+    "code": "CS 51",
+    "title": "Abstraction and Design in Computation",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "15:45",
+    "end": "17:00",
+    "term": "2026 Spring",
+    "instructors": [
+      "Stuart Shieber"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_12076",
+    "code": "CS 91r",
+    "title": "Supervised Reading and Research",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "Stephen Chong",
+      "Adam Hesterberg",
+      "Eddie Kohler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_15817",
+    "code": "CS T217",
+    "title": "Designing K\u201312 Computer Science Learning Experiences",
+    "days": [
+      "Wed"
+    ],
+    "start": "09:00",
+    "end": "11:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "Karen Brennan"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_10698",
+    "code": "MATH 154",
+    "title": "Probability Theory",
+    "days": [
+      "Mon",
+      "Wed"
+    ],
+    "start": "09:00",
+    "end": "10:15",
+    "term": "2026 Spring",
+    "instructors": [
+      "Oliver Knill"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_10949",
+    "code": "MATH 1a",
+    "title": "Introduction to Calculus",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "09:00",
+    "end": "10:15",
+    "term": "2026 Spring",
+    "instructors": [
+      "Hannah Constantin"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13283",
+    "code": "MATH 1b",
+    "title": "Integration, Series and Differential Equations",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "Charlotte Trainor"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13284",
+    "code": "MATH 21a",
+    "title": "Multivariable Calculus",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "Eva Politou"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13285",
+    "code": "MATH 21b",
+    "title": "Linear Algebra and Differential Equations",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "Roderic Guigo Corominas"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_17154",
+    "code": "MATH 22a",
+    "title": "Solving and Optimizing",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "11:15",
+    "end": "12:30",
+    "term": "2026 Spring",
+    "instructors": [
+      "Steven Gortler"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_11699",
+    "code": "MATH 22b",
+    "title": "Vector Calculus and Linear Algebra II",
+    "days": [
+      "Mon",
+      "Wed",
+      "Fri"
+    ],
+    "start": "12:00",
+    "end": "13:15",
+    "term": "2026 Spring",
+    "instructors": [
+      "Philip Wood"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13282",
+    "code": "MATH Mb",
+    "title": "Introduction to Functions and Calculus II",
+    "days": null,
+    "start": null,
+    "end": null,
+    "term": "2026 Spring",
+    "instructors": [
+      "Justin Hancock"
+    ],
+    "prereqs": []
+  },
+  {
+    "id": "2262_13018",
+    "code": "STAT 111",
+    "title": "Introduction to Statistical Inference",
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "start": "13:30",
+    "end": "14:45",
+    "term": "2026 Spring",
+    "instructors": [
+      "Joseph Blitzstein",
+      "Neil Shephard"
+    ],
+    "prereqs": []
+  }
+]
