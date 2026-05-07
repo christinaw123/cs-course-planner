@@ -10,7 +10,6 @@ import TopBar from './components/TopBar';
 import TabBar from './components/TabBar';
 import CalendarGrid from './components/CalendarGrid';
 import DeckBar from './components/DeckBar';
-import UnscheduledShelf from './components/UnscheduledShelf';
 import CatalogSidebar from './components/CatalogSidebar';
 import RequirementsPanel from './components/RequirementsPanel';
 import HistoryView from './components/HistoryView';
@@ -27,12 +26,40 @@ const tagsData = Object.fromEntries(
   Object.entries(rawTagsData).map(([k, v]) => [normCode(k), v])
 );
 
+function LegendBar() {
+  return (
+    <div className="req-legend-bar">
+      <div className="req-legend-bar-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <polyline points="2,7 5.5,10.5 12,3" stroke="#1D9E75" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <span>Done</span>
+      </div>
+      <div className="req-legend-bar-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <circle cx="7" cy="7" r="7" fill="#EF9F27" />
+          <circle cx="7" cy="7" r="5" stroke="white" strokeWidth="1" />
+          <line x1="7" y1="7" x2="4.4" y2="5.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="7" y1="7" x2="10.5" y2="5" stroke="white" strokeWidth="1" strokeLinecap="round" />
+        </svg>
+        <span>Planned (pending enrollment)</span>
+      </div>
+      <div className="req-legend-bar-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <circle cx="7" cy="7" r="6" stroke="#C8C8C8" strokeWidth="1.5" />
+        </svg>
+        <span>Not yet fulfilled</span>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const {
     profile, plan, schedules, upcomingShelf, unscheduled, reqOverrides,
     setProfile,
     addPlanCourse, removePlanCourse, setPlanSemester,
-    addSchedule, deleteSchedule, starSchedule,
+    addSchedule, deleteSchedule,
     addCourseToSchedule, removeCourseFromSchedule,
     addToUpcomingShelf, removeFromUpcomingShelf,
     addUnscheduled, removeUnscheduled,
@@ -69,7 +96,6 @@ export default function App() {
       setPlanSemester={setPlanSemester}
       addSchedule={addSchedule}
       deleteSchedule={deleteSchedule}
-      starSchedule={starSchedule}
       addCourseToSchedule={addCourseToSchedule}
       removeCourseFromSchedule={removeCourseFromSchedule}
       addToUpcomingShelf={addToUpcomingShelf}
@@ -85,7 +111,7 @@ export default function App() {
 function AppInner({
   profile, plan, schedules, upcomingShelf, unscheduled, reqOverrides,
   setProfile, addPlanCourse, removePlanCourse, setPlanSemester,
-  addSchedule, deleteSchedule, starSchedule,
+  addSchedule, deleteSchedule,
   addCourseToSchedule, removeCourseFromSchedule,
   addToUpcomingShelf, removeFromUpcomingShelf,
   addUnscheduled, removeUnscheduled,
@@ -100,16 +126,22 @@ function AppInner({
   const [activeSchedId, setActiveSchedId] = useState(() => schedules[0]?.id);
   const [calPopup, setCalPopup] = useState(null);
   const [catPopup, setCatPopup] = useState(null);
+  const [conflictCourse, setConflictCourse] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
   const [toast, setToast] = useState('');
   const [activeReqFilter, setActiveReqFilter] = useState(null);
   const toastTimer = useRef(null);
+  const reqPanelCurrentRef = useRef(null);
+  const reqPanelUpcomingRef = useRef(null);
 
   const activeSched = schedules.find(s => s.id === activeSchedId) || schedules[0];
   const starredSched = schedules.find(s => s.starred) || schedules[0];
 
   const reqStatus = useRequirements(
     plan, profile.track, reqOverrides, currentSemId, tagsData, starredSched
+  );
+  const upcomingReqStatus = useRequirements(
+    plan, profile.track, reqOverrides, currentSemId, tagsData, activeSched
   );
 
   // All codes from completed past semesters (for catalog "hide taken" filter)
@@ -133,6 +165,11 @@ function AppInner({
     setCalPopup({
       course,
       fromLabel: `${semLabel(currentSemId)} · Current semester`,
+      onRemove: () => {
+        removePlanCourse(currentSemId, course.code);
+        setCalPopup(null);
+        showToast(`${course.code} removed`);
+      },
     });
   }
 
@@ -212,10 +249,69 @@ function AppInner({
     setReqOverride(reqKey, { type, note });
   }
 
-  function handleStarSchedule(id) {
-    starSchedule(id);
-    setActiveSchedId(id);
+  function doAddToUpcomingSchedule(course, hasConflict) {
+    const code = normCode(course.code || '');
+    const tags = course.tags || tagsData[code] || [];
+    const existing = activeSched?.courses || [];
+    const usedColors = existing.map(c => c.colorIdx ?? 0);
+    const colorIdx = nextColor(usedColors);
+    addCourseToSchedule(activeSched.id, {
+      code,
+      title: course.title,
+      days: course.days ? (Array.isArray(course.days) ? course.days : [course.days]) : null,
+      start: course.start || null,
+      end: course.end || null,
+      tags,
+      prereqs: course.prereqs,
+      pf: course.pf,
+      hasConflict,
+      colorIdx,
+      color: BLOCK_COLORS[colorIdx],
+      isCustom: false,
+      isTransfer: false,
+      backupFor: null,
+    });
+    showToast(`${code} added to ${activeSched.name}`);
+    reqPanelUpcomingRef.current?.flashExpand();
   }
+
+  function handleAddDirectFromCatalog(course) {
+    const code = normCode(course.code || '');
+    const tags = course.tags || tagsData[code] || [];
+    if (activeTab === 'upcoming') {
+      const existing = activeSched?.courses || [];
+      if (checkConflict(course, existing)) {
+        setConflictCourse(course);
+        return;
+      }
+      doAddToUpcomingSchedule(course, false);
+    } else if (activeTab === 'current') {
+      addPlanCourse(currentSemId, {
+        code,
+        title: course.title,
+        days: course.days ? (Array.isArray(course.days) ? course.days : [course.days]) : null,
+        start: course.start || null,
+        end: course.end || null,
+        tags,
+        isCustom: false,
+        isTransfer: false,
+      });
+      showToast(`${code} added`);
+      reqPanelCurrentRef.current?.flashExpand();
+    }
+  }
+
+  function handleRemoveDirectFromCatalog(course) {
+    const code = normCode(course.code || '');
+    if (activeTab === 'upcoming') {
+      removeCourseFromSchedule(activeSched.id, code);
+      showToast(`${code} removed`);
+    } else if (activeTab === 'current') {
+      removePlanCourse(currentSemId, code);
+      showToast(`${code} removed`);
+    }
+  }
+
 
   const currentCourses = plan[currentSemId] || [];
   const addedCodesUpcoming = new Set(activeSched?.courses.map(c => c.code) || []);
@@ -236,6 +332,35 @@ function AppInner({
     : false;
 
   const multiScheduleEnabled = profile.multiScheduleEnabled !== false;
+
+  // Catalog props vary only by which semester tab is active
+  const catalogProps = {
+    catalogData,
+    tagsData,
+    takenCodes,
+    activeReqFilter,
+    onReqFilterChange: setActiveReqFilter,
+    onAddDirect: handleAddDirectFromCatalog,
+    onRemoveDirect: handleRemoveDirectFromCatalog,
+    ...(activeTab === 'current' ? {
+      termLabel: 'Current semester',
+      semLong: currentLong,
+      isUpcoming: false,
+      addedCodes: addedCodesCurrent,
+      shelvedCodes: new Set(),
+      reqStatus,
+      onOpenPopup: c => handleOpenCatalogPopup(c, 'current'),
+    } : {
+      termLabel: 'Upcoming semester',
+      semLong: upcomingLong,
+      isUpcoming: true,
+      activeScheduleName: activeSched?.name,
+      addedCodes: addedCodesUpcoming,
+      shelvedCodes,
+      reqStatus: upcomingReqStatus,
+      onOpenPopup: c => handleOpenCatalogPopup(c, 'upcoming'),
+    }),
+  };
 
   return (
     <div className="app">
@@ -261,108 +386,74 @@ function AppInner({
         )}
 
         {activeTab === 'current' && (
-          <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
-            <div className="sidebar sidebar-left">
-              <div className="sidebar-body-wrap">
-                <CatalogSidebar
-                  termLabel="Current semester"
-                  semLong={currentLong}
-                  isUpcoming={false}
-                  catalogData={catalogData}
-                  tagsData={tagsData}
-                  addedCodes={addedCodesCurrent}
-                  shelvedCodes={new Set()}
-                  takenCodes={takenCodes}
-                  reqStatus={reqStatus}
-                  activeReqFilter={activeReqFilter}
-                  onReqFilterChange={setActiveReqFilter}
-                  onOpenPopup={c => handleOpenCatalogPopup(c, 'current')}
-                />
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+              <RequirementsPanel
+                ref={reqPanelCurrentRef}
+                track={profile.track}
+                reqStatus={reqStatus}
+                reqOverrides={reqOverrides}
+                onOverride={handleOverride}
+                onTrackChange={t => setProfile({ track: t })}
+                activeReqFilter={activeReqFilter}
+                onReqFilterChange={setActiveReqFilter}
+              />
+              <div className="sidebar sidebar-left">
+                <div className="sidebar-body-wrap">
+                  <CatalogSidebar {...catalogProps} />
+                </div>
               </div>
+              <CalendarGrid
+                courses={currentCourses}
+                isCurrent={true}
+                onCourseClick={handleCurrentCourseClick}
+              />
             </div>
-            <CalendarGrid
-              courses={currentCourses}
-              isCurrent={true}
-              onCourseClick={handleCurrentCourseClick}
-            />
-            <div className="sidebar">
-              <div className="sidebar-body-wrap">
-                <RequirementsPanel
-                  track={profile.track}
-                  reqStatus={reqStatus}
-                  reqOverrides={reqOverrides}
-                  onOverride={handleOverride}
-                  onTrackChange={t => setProfile({ track: t })}
-                  activeReqFilter={activeReqFilter}
-                  onReqFilterChange={setActiveReqFilter}
-                />
-              </div>
-            </div>
+            <LegendBar />
           </div>
         )}
 
         {activeTab === 'upcoming' && (
           <div className="cal-view">
-            {multiScheduleEnabled && (
-              <DeckBar
-                schedules={schedules}
-                activeSchedId={activeSchedId || schedules[0]?.id}
-                onSetActive={setActiveSchedId}
-                onStar={handleStarSchedule}
-                onDelete={deleteSchedule}
-                onAdd={addSchedule}
-              />
-            )}
             <div className="cal-view-inner">
+              <RequirementsPanel
+                ref={reqPanelUpcomingRef}
+                track={profile.track}
+                reqStatus={upcomingReqStatus}
+                reqOverrides={reqOverrides}
+                onOverride={handleOverride}
+                onTrackChange={t => setProfile({ track: t })}
+                isUpcoming={true}
+                schedName={activeSched?.name}
+                activeReqFilter={activeReqFilter}
+                onReqFilterChange={setActiveReqFilter}
+              />
               <div className="sidebar sidebar-left">
                 <div className="sidebar-body-wrap">
-                  <CatalogSidebar
-                    termLabel="Upcoming semester"
-                    semLong={upcomingLong}
-                    isUpcoming={true}
-                    catalogData={catalogData}
-                    tagsData={tagsData}
-                    activeScheduleName={activeSched?.name}
-                    addedCodes={addedCodesUpcoming}
-                    shelvedCodes={shelvedCodes}
-                    takenCodes={takenCodes}
-                    reqStatus={reqStatus}
-                    activeReqFilter={activeReqFilter}
-                    onReqFilterChange={setActiveReqFilter}
-                    onOpenPopup={c => handleOpenCatalogPopup(c, 'upcoming')}
-                  />
+                  <CatalogSidebar {...catalogProps} />
                 </div>
               </div>
-              <CalendarGrid
-                courses={activeSched?.courses || []}
-                isCurrent={false}
-                onCourseClick={handleUpcomingCourseClick}
-                onSetBackup={(courseCode, backupFor) =>
-                  setBackupAnnotation(activeSched.id, courseCode, backupFor)
-                }
-              />
-              <div className="sidebar">
-                <div className="sidebar-body-wrap">
-                  <RequirementsPanel
-                    track={profile.track}
-                    reqStatus={reqStatus}
-                    reqOverrides={reqOverrides}
-                    onOverride={handleOverride}
-                    onTrackChange={t => setProfile({ track: t })}
-                    isUpcoming={true}
-                    schedName={activeSched?.name}
-                    schedStarred={activeSched?.starred}
-                    activeReqFilter={activeReqFilter}
-                    onReqFilterChange={setActiveReqFilter}
+              <div className="cal-right">
+                {multiScheduleEnabled && (
+                  <DeckBar
+                    schedules={schedules}
+                    activeSchedId={activeSchedId || schedules[0]?.id}
+                    onSetActive={setActiveSchedId}
+                    onDelete={deleteSchedule}
+                    onAdd={addSchedule}
                   />
-                </div>
+                )}
+                <CalendarGrid
+                  courses={activeSched?.courses || []}
+                  isCurrent={false}
+                  onCourseClick={handleUpcomingCourseClick}
+                  onSetBackup={(courseCode, backupFor) =>
+                    setBackupAnnotation(activeSched.id, courseCode, backupFor)
+                  }
+                />
               </div>
             </div>
-            <UnscheduledShelf
-              courses={upcomingShelf}
-              semLong={upcomingLong}
-              onRemove={removeFromUpcomingShelf}
-            />
+            <LegendBar />
           </div>
         )}
 
@@ -377,7 +468,7 @@ function AppInner({
             track={profile.track}
             activeReqFilter={activeReqFilter}
             onReqFilterChange={setActiveReqFilter}
-            onAdd={course => addUnscheduled(activeTab, { code: normCode(course.code), title: course.title, tags: course.tags || [] })}
+            onAdd={course => addUnscheduled(activeTab, { code: course.code, title: course.title, tags: course.tags || [] })}
             onRemove={code => removeUnscheduled(activeTab, code)}
             onOverride={handleOverride}
           />
@@ -397,7 +488,7 @@ function AppInner({
         <CatalogPopup
           course={catPopup.course}
           fromLabel={`${catPopup.context === 'upcoming' ? upcomingLong : currentLong} · Catalog`}
-          schedName={activeSched?.name}
+          schedName={catPopup.context === 'upcoming' ? activeSched?.name : 'current semester'}
           alreadyAdded={catAlreadyAdded}
           onShelf={catOnShelf}
           hasConflict={catConflict}
@@ -414,6 +505,38 @@ function AppInner({
           onSave={setProfile}
           onClose={() => setShowSettings(false)}
         />
+      )}
+
+      {conflictCourse && (
+        <div className="overlay open" onClick={() => setConflictCourse(null)}>
+          <div className="popup" onClick={e => e.stopPropagation()}>
+            <div className="popup-stripe" style={{ background: 'var(--amber)' }} />
+            <div className="popup-top">
+              <div className="popup-from">Time conflict</div>
+              <div className="popup-code">{conflictCourse.code}</div>
+              <div className="popup-title-el">{conflictCourse.title}</div>
+            </div>
+            <div className="popup-divider" />
+            <div className="popup-body">
+              <div className="conflict-warn">
+                <div className="conflict-warn-title">Scheduling conflict detected</div>
+                {conflictCourse.code} overlaps with a course already in your schedule. You can still add it if simultaneous enrollment is allowed.
+              </div>
+            </div>
+            <div className="popup-footer">
+              <button className="btn-ghost" onClick={() => setConflictCourse(null)}>Cancel</button>
+              <button
+                className="btn-primary warn-btn"
+                onClick={() => {
+                  doAddToUpcomingSchedule(conflictCourse, true);
+                  setConflictCourse(null);
+                }}
+              >
+                Add anyway
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       <div className={`toast${toast ? ' show' : ''}`}>{toast}</div>

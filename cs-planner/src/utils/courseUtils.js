@@ -26,7 +26,11 @@ export function parseTime(t) {
 }
 
 export function normCode(code) {
-  return code.replace('COMPSCI', 'CS').replace(/\s+/g, ' ').trim();
+  return code
+    .replace('COMPSCI', 'CS')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/(\d)([A-Za-z])$/, (_, d, l) => `${d}${l.toLowerCase()}`);
 }
 
 export function checkConflict(course, existingCourses) {

@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Scrape CS requirement tags from the Harvard CS advising page.
-Outputs: src/data/tags.json
-"""
 
 import requests
 import json

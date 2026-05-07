@@ -1,9 +1,11 @@
-import { useState, useRef } from 'react';
-import { SEM_POOL, getPastSemsForYear, semLong } from '../constants/semesters';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import { SEM_POOL, getPastSemsForYear, getSemIdx, semLong } from '../constants/semesters';
 import { TAG_SHORT, TAG_CLASS, TAG_AUTO, COURSE_TITLE } from '../constants/tags';
 import { BLOCK_COLORS, nextColor } from '../constants/colors';
 import { normCode } from '../utils/courseUtils';
 import { extractTextFromPDF, parseTranscriptText, enrichParsedCourses } from '../utils/parseTranscript';
+import CourseAutocomplete from './CourseAutocomplete';
+import catalogData from '../data/catalog.json';
 
 const TRACK_OPTS = [
   { id: 'Basic', desc: '9 CS core, 2–5 math' },
@@ -20,6 +22,28 @@ function semFromDate() {
     ? `f${String(now.getFullYear()).slice(-2)}`
     : `s${String(now.getFullYear()).slice(-2)}`;
 }
+
+function semIdToTerm(semId) {
+  const yr = '20' + semId.slice(1);
+  return semId.startsWith('f') ? `${yr} Fall` : `${yr} Spring`;
+}
+
+// Computed once at module load — current semester doesn't change mid-session
+const _CURRENT_SEM_ID = semFromDate();
+const _CURRENT_TERM = semIdToTerm(_CURRENT_SEM_ID);
+const catalogCurrentMap = new Map();
+catalogData.filter(c => c.term === _CURRENT_TERM).forEach(c => {
+  const code = normCode(c.code);
+  catalogCurrentMap.set(code, {
+    code,
+    title: c.title,
+    tags: TAG_AUTO[code] || [],
+    days: c.days || null,
+    start: c.start || null,
+    end: c.end || null,
+  });
+});
+const currentSemCourseList = Array.from(catalogCurrentMap.values());
 
 function yearFromGrad(gradYear) {
   const now = new Date();
@@ -48,6 +72,36 @@ export default function Onboarding({ onComplete }) {
   const [pastCourses, setPastCourses] = useState({});
   const [pdfState, setPdfState] = useState(null); // null | 'parsing' | { parsed } | 'error'
   const [appliedBanner, setAppliedBanner] = useState(null); // { count, sems }
+  const [inputErrors, setInputErrors] = useState({});
+  const [inputValues, setInputValues] = useState({});
+  const [scrolledToEnd, setScrolledToEnd] = useState(false);
+  const applyResultRef = useRef(null);
+  const scrollBodyRef = useRef(null);
+
+  // Set the applied-banner once pastCourses has been updated by applyParsedCourses
+  useEffect(() => {
+    if (applyResultRef.current !== null) {
+      setAppliedBanner(applyResultRef.current);
+      applyResultRef.current = null;
+    }
+  }, [pastCourses]);
+
+  // When entering step 4, check whether content already fits without scrolling
+  useLayoutEffect(() => {
+    if (step !== 4) return;
+    const id = requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const el = scrollBodyRef.current;
+        if (el && el.scrollHeight <= el.clientHeight + 10) setScrolledToEnd(true);
+      });
+    });
+    return () => cancelAnimationFrame(id);
+  }, [step]);
+
+  function handleBodyScroll() {
+    const el = scrollBodyRef.current;
+    if (el && el.scrollHeight - el.scrollTop <= el.clientHeight + 10) setScrolledToEnd(true);
+  }
   const inputRefs = useRef({});
   const fileInputRef = useRef(null);
 
@@ -55,8 +109,9 @@ export default function Onboarding({ onComplete }) {
   const year = gradYear ? yearFromGrad(gradYear) : '';
 
   const pastSemIds = semId && year && year !== 'Freshman'
-    ? getPastSemsForYear(year, semId)
+    ? getPastSemsForYear(year, semId).reverse()
     : [];
+
 
   function goStep2() {
     const g = parseInt(gradYear);
@@ -97,22 +152,84 @@ export default function Onboarding({ onComplete }) {
   }
 
   function addPastCourse(sid) {
-    const inputEl = inputRefs.current[sid];
-    if (!inputEl) return;
-    const raw = inputEl.value.trim();
+    const raw = (inputValues[sid] || '').trim();
     if (!raw) return;
     const code = normCode(raw.toUpperCase());
+    if (!(code in TAG_AUTO)) {
+      setInputErrors(prev => ({ ...prev, [sid]: `"${code}" isn't a recognized requirement course.` }));
+      return;
+    }
+    setInputErrors(prev => ({ ...prev, [sid]: null }));
+    doAddCourse(sid, code);
+  }
+
+  function addFromSelection(sid, course) {
+    setInputErrors(prev => ({ ...prev, [sid]: null }));
+    doAddCourse(sid, course.code);
+  }
+
+  function doAddCourse(sid, code) {
+    const existing = pastCourses[sid] || [];
+    if (existing.some(c => c.code === code)) {
+      setInputValues(prev => ({ ...prev, [sid]: '' }));
+      return;
+    }
     const tags = TAG_AUTO[code] || [];
     const title = COURSE_TITLE[code] || code;
-    const existing = pastCourses[sid] || [];
     const usedColors = existing.map(c => c.colorIdx ?? 0);
     const colorIdx = nextColor(usedColors);
     setPastCourses(prev => ({
       ...prev,
       [sid]: [...(prev[sid] || []), { code, title, tags, colorIdx, color: BLOCK_COLORS[colorIdx], isCustom: false, isTransfer: false }],
     }));
-    inputEl.value = '';
-    inputEl.focus();
+    setInputValues(prev => ({ ...prev, [sid]: '' }));
+    inputRefs.current[sid]?.focus();
+  }
+
+  function addCurrentSemCourse() {
+    const raw = (inputValues[semId] || '').trim();
+    if (!raw) return;
+    const code = normCode(raw.toUpperCase());
+    const catalogEntry = catalogCurrentMap.get(code);
+    const title = catalogEntry?.title || COURSE_TITLE[code] || code;
+    const tags = TAG_AUTO[code] || [];
+    doAddCurrentSemCourse(code, title, tags, catalogEntry?.days, catalogEntry?.start, catalogEntry?.end);
+  }
+
+  function addCurrentSemFromSelection(course) {
+    doAddCurrentSemCourse(
+      course.code,
+      course.title || COURSE_TITLE[course.code] || course.code,
+      course.tags || TAG_AUTO[course.code] || [],
+      course.days || null,
+      course.start || null,
+      course.end || null,
+    );
+  }
+
+  function doAddCurrentSemCourse(code, title, tags, days, start, end) {
+    const existing = pastCourses[semId] || [];
+    if (existing.some(c => c.code === code)) {
+      setInputValues(prev => ({ ...prev, [semId]: '' }));
+      return;
+    }
+    setInputErrors(prev => ({ ...prev, [semId]: null }));
+    const usedColors = existing.map(c => c.colorIdx ?? 0);
+    const colorIdx = nextColor(usedColors);
+    setPastCourses(prev => ({
+      ...prev,
+      [semId]: [...(prev[semId] || []), {
+        code, title, tags, colorIdx,
+        color: BLOCK_COLORS[colorIdx],
+        days: days || null,
+        start: start || null,
+        end: end || null,
+        isCustom: false,
+        isTransfer: false,
+      }],
+    }));
+    setInputValues(prev => ({ ...prev, [semId]: '' }));
+    inputRefs.current[semId]?.focus();
   }
 
   async function handleTranscriptUpload(e) {
@@ -134,23 +251,33 @@ export default function Onboarding({ onComplete }) {
 
   function applyParsedCourses() {
     if (!pdfState?.parsed) return;
-    let addedCount = 0;
-    const addedSems = [];
+    const parsedData = pdfState.parsed;
+    applyResultRef.current = null;
+    setScrolledToEnd(false);
     setPastCourses(prev => {
       const next = { ...prev };
-      for (const [sid, courses] of Object.entries(pdfState.parsed)) {
+      let count = 0;
+      const sems = new Set();
+      for (const [sid, courses] of Object.entries(parsedData)) {
         const existing = next[sid] || [];
         const existingCodes = new Set(existing.map(c => c.code));
-        const newCourses = courses.filter(c => !existingCodes.has(c.code));
+        // For current semester, enrich with catalog schedule data so courses show on the calendar
+        const enriched = sid === semId
+          ? courses.map(c => {
+              const cat = catalogCurrentMap.get(c.code);
+              return cat ? { ...c, days: cat.days, start: cat.start, end: cat.end } : c;
+            })
+          : courses;
+        const newCourses = enriched.filter(c => !existingCodes.has(c.code));
         if (newCourses.length) {
           next[sid] = [...existing, ...newCourses];
-          addedCount += newCourses.length;
-          addedSems.push(sid);
+          count += newCourses.length;
+          sems.add(sid);
         }
       }
+      applyResultRef.current = { count, sems: sems.size };
       return next;
     });
-    setAppliedBanner({ count: addedCount, sems: addedSems.length });
     setPdfState(null);
   }
 
@@ -283,7 +410,7 @@ export default function Onboarding({ onComplete }) {
       {step === 4 && (
         <div className="ob-card wide">
           <div className="ob-stripe" />
-          <div className="ob-body scrollable">
+          <div className="ob-body scrollable" ref={scrollBodyRef} onScroll={handleBodyScroll}>
             <div className="ob-logo">CS Planner</div>
             <div className="step-dots">
               <div className="dot done" />
@@ -291,8 +418,8 @@ export default function Onboarding({ onComplete }) {
               <div className="dot done" />
               <div className="dot active" />
             </div>
-            <div className="ob-title">Import your CS course history</div>
-            <div className="ob-sub">Seed your history so requirements start partially satisfied. You can always add more later from the History tab.</div>
+            <div className="ob-title">Set up your courses</div>
+            <div className="ob-sub">Add current semester courses to populate your calendar, and import past history so requirements start partially satisfied.</div>
 
             {appliedBanner && (
               <div className="ob-transcript-applied">
@@ -342,7 +469,7 @@ export default function Onboarding({ onComplete }) {
                 <div className="ob-transcript-preview-title">
                   Found {Object.values(pdfState.parsed).reduce((n, cs) => n + cs.length, 0)} course{Object.values(pdfState.parsed).reduce((n, cs) => n + cs.length, 0) !== 1 ? 's' : ''}
                 </div>
-                {Object.entries(pdfState.parsed).map(([sid, courses]) => (
+                {Object.entries(pdfState.parsed).sort(([a], [b]) => getSemIdx(a) - getSemIdx(b)).map(([sid, courses]) => (
                   <div key={sid} style={{ marginBottom: 6 }}>
                     <div className="ob-transcript-sem-label">{semLong(sid)}</div>
                     {courses.map(c => (
@@ -365,6 +492,53 @@ export default function Onboarding({ onComplete }) {
                 </div>
               </div>
             )}
+
+            {/* Current semester — courses here populate the calendar */}
+            <div className="ob-current-sem">
+              <div className="ob-current-sem-header">
+                <span className="ob-current-sem-title">{semLong(semId)}</span>
+                <span className="ob-current-badge">Current semester</span>
+              </div>
+              <div className="ob-current-sem-sub">Courses added here appear on your calendar with scheduled times.</div>
+              {(pastCourses[semId] || []).map((c, i) => (
+                <div key={i} className="ob-past-course-row">
+                  <div
+                    className="ob-past-color-bar"
+                    style={{ background: c.color.bg, border: `1px solid ${c.color.border}` }}
+                  />
+                  <div style={{ flex: 1 }}>
+                    <div className="ob-past-code">{c.code}</div>
+                    <div className="ob-past-tags">
+                      {c.tags.map(t => (
+                        <span key={t} className={`tag ${TAG_CLASS[t] || 'custom'}`}>{TAG_SHORT[t] || t}</span>
+                      ))}
+                      {c.tags.length === 0 && (
+                        <span style={{ fontSize: 10, color: 'var(--text3)' }}>{c.title}</span>
+                      )}
+                      {c.days && c.start && (
+                        <span className="ob-sched-badge">{c.days.slice(0, 2).join('/')} {c.start}</span>
+                      )}
+                    </div>
+                  </div>
+                  <button className="ob-past-rm" onClick={() => removePastCourse(semId, i)}>×</button>
+                </div>
+              ))}
+              <div className="ob-add-course-row">
+                <CourseAutocomplete
+                  inputRef={el => { inputRefs.current[semId] = el; }}
+                  value={inputValues[semId] || ''}
+                  onChange={val => { setInputValues(prev => ({ ...prev, [semId]: val })); setInputErrors(prev => ({ ...prev, [semId]: null })); }}
+                  onSelect={course => addCurrentSemFromSelection(course)}
+                  onEnter={() => addCurrentSemCourse()}
+                  placeholder="Course code, e.g. CS 181"
+                  courseList={currentSemCourseList}
+                />
+                <button onClick={() => addCurrentSemCourse()}>+ Add</button>
+              </div>
+              {inputErrors[semId] && (
+                <div className="err-msg" style={{ marginTop: 4 }}>{inputErrors[semId]}</div>
+              )}
+            </div>
 
             {pastSemIds.length === 0 && (
               <div style={{ fontSize: 11, color: 'var(--text3)', padding: '8px 0' }}>No past semesters to show.</div>
@@ -398,13 +572,19 @@ export default function Onboarding({ onComplete }) {
                     </div>
                   ))}
                   <div className="ob-add-course-row">
-                    <input
-                      ref={el => inputRefs.current[sid] = el}
+                    <CourseAutocomplete
+                      inputRef={el => inputRefs.current[sid] = el}
+                      value={inputValues[sid] || ''}
+                      onChange={val => { setInputValues(prev => ({ ...prev, [sid]: val })); setInputErrors(prev => ({ ...prev, [sid]: null })); }}
+                      onSelect={course => addFromSelection(sid, course)}
+                      onEnter={() => addPastCourse(sid)}
                       placeholder="Course code, e.g. CS 50"
-                      onKeyDown={e => { if (e.key === 'Enter') addPastCourse(sid); }}
                     />
                     <button onClick={() => addPastCourse(sid)}>+ Add</button>
                   </div>
+                  {inputErrors[sid] && (
+                    <div className="err-msg" style={{ marginTop: 4 }}>{inputErrors[sid]}</div>
+                  )}
                 </div>
               );
             })}
@@ -413,7 +593,10 @@ export default function Onboarding({ onComplete }) {
           </div>
           <div className="ob-footer">
             <button className="btn-ghost" onClick={() => setStep(3)}>Back</button>
-            <button className="btn-primary" onClick={finish}>Get started</button>
+            {scrolledToEnd
+              ? <button className="btn-primary" onClick={finish}>Get started</button>
+              : <span className="ob-scroll-hint">↓ Scroll to review</span>
+            }
             <button className="skip-link" onClick={finish}>Skip this step</button>
           </div>
         </div>

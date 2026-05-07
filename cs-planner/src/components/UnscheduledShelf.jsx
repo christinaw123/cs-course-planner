@@ -1,12 +1,12 @@
 import { TAG_SHORT, TAG_CLASS } from '../constants/tags';
 
-export default function UnscheduledShelf({ courses = [], semLong, onRemove }) {
+export default function UnscheduledShelf({ courses = [], semLong, onRemove, title, sub }) {
   return (
     <div className="unscheduled-shelf">
       <div className="shelf-header-row">
         <div>
-          <div className="shelf-title">Unscheduled — no confirmed time yet</div>
-          <div className="shelf-sub">Will move to calendar when {semLong} times are published</div>
+          <div className="shelf-title">{title || 'Unscheduled — no confirmed time yet'}</div>
+          <div className="shelf-sub">{sub || `Will move to calendar when ${semLong} times are published`}</div>
         </div>
       </div>
       <div className="shelf-items-row">

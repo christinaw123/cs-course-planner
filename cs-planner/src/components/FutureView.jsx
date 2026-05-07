@@ -56,6 +56,16 @@ export default function FutureView({
   return (
     <div className="future-area">
       <div className="future-view-inner">
+        <div className="future-sidebar">
+          <RequirementsPanel
+            track={track}
+            reqStatus={reqStatus}
+            reqOverrides={reqOverrides}
+            onOverride={onOverride}
+            activeReqFilter={activeReqFilter}
+            onReqFilterChange={onReqFilterChange}
+          />
+        </div>
         <div className="future-main">
           <div className="fut-shelf">
             <div className="fut-shelf-title">Planned for {semName}</div>
@@ -127,25 +137,14 @@ export default function FutureView({
                 </div>
                 <button
                   className={`plan-btn${planned.has(c.code) ? ' planned' : ''}`}
-                  onClick={() => !planned.has(c.code) && onAdd(c)}
+                  onClick={() => planned.has(c.code) ? onRemove(c.code) : onAdd(c)}
                 >
-                  {planned.has(c.code) ? 'Planned ✓' : '+ Plan'}
+                  {planned.has(c.code) ? '✓ Planned' : '+ Plan'}
                 </button>
               </div>
             ))}
           </div>
 
-        </div>
-
-        <div className="future-sidebar">
-          <RequirementsPanel
-            track={track}
-            reqStatus={reqStatus}
-            reqOverrides={reqOverrides}
-            onOverride={onOverride}
-            activeReqFilter={activeReqFilter}
-            onReqFilterChange={onReqFilterChange}
-          />
         </div>
       </div>
     </div>

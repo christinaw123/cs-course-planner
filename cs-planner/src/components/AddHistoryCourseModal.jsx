@@ -1,15 +1,26 @@
 import { useState } from 'react';
+import { TAG_AUTO, COURSE_TITLE } from '../constants/tags';
+import { normCode } from '../utils/courseUtils';
+import CourseAutocomplete from './CourseAutocomplete';
 
 export default function AddHistoryCourseModal({ semLong, onAdd, onClose }) {
   const [code, setCode] = useState('');
   const [title, setTitle] = useState('');
   const [type, setType] = useState('cs');
+  const [error, setError] = useState('');
 
   function handleAdd() {
     const trimCode = code.trim();
     const trimTitle = title.trim();
-    if (!trimCode || !trimTitle) return;
-    onAdd({ code: trimCode.toUpperCase(), title: trimTitle, type });
+    if (!trimCode) { setError('Enter a course code.'); return; }
+    const normalized = normCode(trimCode.toUpperCase());
+    if (type === 'cs' && !(normalized in TAG_AUTO)) {
+      setError(`"${normalized}" isn't a recognized requirement course. Use Custom for unlisted courses.`);
+      return;
+    }
+    if (!trimTitle && !COURSE_TITLE[normalized]) { setError('Enter a course title.'); return; }
+    setError('');
+    onAdd({ code: normalized, title: trimTitle || COURSE_TITLE[normalized] || '', type });
     onClose();
   }
 
@@ -22,26 +33,27 @@ export default function AddHistoryCourseModal({ semLong, onAdd, onClose }) {
           <div className="hist-modal-sub">Add a missed course or transferred credit. Tags will be mapped automatically.</div>
           <div className="hist-field">
             <label>Course code</label>
-            <input
+            <CourseAutocomplete
               value={code}
-              onChange={e => setCode(e.target.value)}
+              onChange={v => { setCode(v); setError(''); }}
+              onSelect={c => { setCode(c.code); setTitle(COURSE_TITLE[c.code] || c.title || ''); setError(''); }}
+              onEnter={handleAdd}
               placeholder="e.g. CS 124, MATH 21b"
-              autoFocus
-              onKeyDown={e => e.key === 'Enter' && handleAdd()}
             />
           </div>
           <div className="hist-field">
             <label>Course title</label>
             <input
               value={title}
-              onChange={e => setTitle(e.target.value)}
+              onChange={e => { setTitle(e.target.value); setError(''); }}
               placeholder="e.g. Data Structures & Algorithms"
               onKeyDown={e => e.key === 'Enter' && handleAdd()}
             />
           </div>
+          {error && <div className="err-msg" style={{ marginTop: -4, marginBottom: 6 }}>{error}</div>}
           <div className="hist-field">
             <label>Type</label>
-            <select value={type} onChange={e => setType(e.target.value)}>
+            <select value={type} onChange={e => { setType(e.target.value); setError(''); }}>
               <option value="cs">CS course</option>
               <option value="transfer">Transfer / AP credit</option>
               <option value="custom">Custom / non-CS course</option>

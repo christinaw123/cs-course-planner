@@ -1,7 +1,13 @@
+import rawTagsData from '../data/tags.json';
+
 export const TAG_SHORT = {
   prog1: 'Prog 1',
   prog2: 'Prog 2',
   formal: 'Formal',
+  discmath: 'Disc Math',
+  complim: 'Comp/Lim',
+  alg: 'Alg',
+  intalg: 'Int Alg',
   systems: 'Systems',
   adv: 'Adv CS',
   world: 'C & W',
@@ -13,6 +19,10 @@ export const TAG_FULL = {
   prog1: 'Programming 1',
   prog2: 'Programming 2',
   formal: 'Formal Reasoning',
+  discmath: 'Discrete Math',
+  complim: 'Computability & Limitations',
+  alg: 'Algorithms',
+  intalg: 'Intermediate Algorithms',
   systems: 'Systems',
   adv: 'Advanced CS',
   world: 'Computation & World',
@@ -24,6 +34,10 @@ export const TAG_CLASS = {
   prog1: 'prog',
   prog2: 'prog',
   formal: 'formal',
+  discmath: 'formal',
+  complim: 'formal',
+  alg: 'formal',
+  intalg: 'formal',
   systems: 'systems',
   adv: 'adv',
   world: 'world',
@@ -31,40 +45,52 @@ export const TAG_CLASS = {
   math: 'math',
 };
 
-// Automatic tag lookup by course code (used in onboarding + history add)
-export const TAG_AUTO = {
-  'CS 50': ['prog1'],
-  'CS 51': ['prog2'],
-  'CS 32': ['prog1'],
-  'CS 20': ['formal'],
+// Inline normalizer (avoids circular import with courseUtils)
+function norm(code) {
+  return code
+    .replace('COMPSCI', 'CS')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/(\d)([A-Za-z])$/, (_, d, l) => `${d}${l.toLowerCase()}`);
+}
+
+// Hand-curated tags for CS courses absent from the scraped advising-page data
+const TAG_FALLBACK = {
   'CS 120': ['formal', 'complim'],
-  'CS 1200': ['formal', 'complim'],
   'CS 121': ['formal', 'complim'],
   'CS 124': ['formal', 'alg', 'adv'],
-  'CS 1240': ['formal', 'intalg', 'adv'],
-  'CS 61': ['systems', 'adv'],
   'CS 161': ['systems', 'adv'],
   'CS 165': ['systems', 'adv'],
   'CS 181': ['world', 'ai', 'adv'],
   'CS 182': ['ai', 'adv'],
-  'CS 1260': ['world', 'adv'],
-  'CS 1340': ['world', 'adv'],
-  'CS 1780': ['adv'],
-  'CS 2780': ['adv'],
-  'CS 91r': ['adv'],
   'CS 189': ['adv'],
   'CS 191': ['adv'],
-  'CS 2241': ['adv'],
+  'CS 91r': ['adv'],
+  'CS 1340': ['world', 'adv'],
+};
+
+// Math/probability requirement courses (not on the CS advising scraper page)
+const TAG_MATH = {
   'STAT 110': ['math'],
-  'MATH 21b': ['math'],
+  'STAT 111': ['math'],
   'MATH 21a': [],
+  'MATH 21b': ['math'],
   'MATH 22a': ['math'],
   'MATH 22b': ['math'],
   'MATH 25a': ['math'],
-  'STAT 111': ['math'],
 };
 
-// Short title lookup for onboarding autocomplete
+// Scraped tags from the Harvard CS advising page — authoritative for all courses it lists
+const scrapedTags = Object.fromEntries(
+  Object.entries(rawTagsData)
+    .filter(([, tags]) => Array.isArray(tags) && tags.length > 0)
+    .map(([k, v]) => [norm(k), v])
+);
+
+// Merge order: scraped data overrides fallback; math entries always win (scraper ignores them)
+export const TAG_AUTO = { ...TAG_FALLBACK, ...scrapedTags, ...TAG_MATH };
+
+// Short title lookup for onboarding autocomplete and transcript enrichment
 export const COURSE_TITLE = {
   'CS 50': 'Introduction to Computer Science',
   'CS 51': 'Abstraction and Design in Computation',

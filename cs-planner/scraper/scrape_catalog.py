@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Scrape Harvard course catalog for CS + math prep courses.
-Fetches COMPSCI, MATH, STAT, and APMTH courses for Spring 2026 and Fall 2026.
-Outputs: src/data/catalog.json
-"""
 
 import requests
 import json

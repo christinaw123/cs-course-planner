@@ -41,6 +41,8 @@ export default function CatalogSidebar({
   activeReqFilter,
   onReqFilterChange,
   onOpenPopup,
+  onAddDirect,
+  onRemoveDirect,
 }) {
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState(null);
@@ -126,7 +128,7 @@ export default function CatalogSidebar({
             onClick={() => setFilterMissing(v => !v)}
             title="Show only courses that satisfy missing requirements"
           >
-            Gaps
+            Requirements
           </span>
           <span
             className={`fpill${hideTaken ? ' active' : ''}`}
@@ -158,11 +160,7 @@ export default function CatalogSidebar({
                 ? <span className="cat-added-label" style={{ color: 'var(--green)' }}>✓ Added</span>
                 : isShelved && isUpcoming
                   ? <span className="cat-added-label" style={{ color: 'var(--teal)' }}>On shelf</span>
-                  : hasTime && isUpcoming
-                    ? <span style={{ fontSize: 9, color: 'var(--crimson)', fontWeight: 600 }}>+ Add</span>
-                    : !hasTime
-                      ? null
-                      : null}
+                  : null}
             </div>
             <div className="cat-title">{c.title}</div>
             {hasTime ? (
@@ -187,6 +185,24 @@ export default function CatalogSidebar({
             </div>
             {c.prereqs?.length > 0 && (
               <div className="cat-meta">Prereqs: {c.prereqs.join(', ')}</div>
+            )}
+            {hasTime && (
+              isAdded
+                ? (
+                  <button
+                    className="cat-add-btn cat-add-btn-added"
+                    onClick={e => { e.stopPropagation(); onRemoveDirect?.(c); }}
+                  >
+                    ✓ Added
+                  </button>
+                ) : (
+                  <button
+                    className="cat-add-btn"
+                    onClick={e => { e.stopPropagation(); onAddDirect?.(c); }}
+                  >
+                    + Add
+                  </button>
+                )
             )}
           </div>
         );

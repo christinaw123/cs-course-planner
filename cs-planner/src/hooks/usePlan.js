@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 import { BLOCK_COLORS, nextColor } from '../constants/colors';
-import { normCode } from '../utils/courseUtils';
 
 const STORAGE_KEY = 'cs_planner_v2_state';
 
@@ -29,14 +28,14 @@ function load() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) return { ...DEFAULT_STATE, ...JSON.parse(raw) };
-  } catch {}
+  } catch { /* ignore localStorage read errors */ }
   return DEFAULT_STATE;
 }
 
 function save(state) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  } catch {}
+  } catch { /* ignore localStorage write errors */ }
 }
 
 export function usePlan() {
@@ -105,13 +104,10 @@ export function usePlan() {
   }, []);
 
   const starSchedule = useCallback((id) => {
-    setState(s => {
-      const mapped = s.schedules.map(sc => ({ ...sc, starred: sc.id === id }));
-      const starred = mapped.find(sc => sc.starred);
-      const rest = mapped.filter(sc => !sc.starred);
-      // Move starred to front, keep names/IDs as-is
-      return { ...s, schedules: [starred, ...rest] };
-    });
+    setState(s => ({
+      ...s,
+      schedules: s.schedules.map(sc => ({ ...sc, starred: sc.id === id })),
+    }));
   }, []);
 
   const addCourseToSchedule = useCallback((schedId, course) => {

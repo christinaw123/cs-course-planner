@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Scrape the Harvard CS multi-year course plan (instructor assignments by semester).
-Uses the backend API powering https://info.seas.harvard.edu/courses/four-year-plan
-Outputs: src/data/four_year_plan.json
-"""
 
 import requests
 import json

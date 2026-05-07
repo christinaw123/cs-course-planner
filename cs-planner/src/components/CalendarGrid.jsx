@@ -1,5 +1,5 @@
-import { useMemo } from 'react';
-import { DAYS, frac, fmt, PX, layoutDay } from '../utils/courseUtils';
+import { Fragment, useMemo } from 'react';
+import { DAYS, frac, PX, layoutDay } from '../utils/courseUtils';
 
 const MW_DAYS = new Set(['Mon', 'Wed']);
 const TTH_DAYS = new Set(['Tue', 'Thu']);
@@ -60,8 +60,8 @@ export default function CalendarGrid({ courses = [], isCurrent = false, onCourse
 
         {/* Time rows */}
         {rows.map(({ r, half, hour }) => (
-          <>
-            <div key={`t${r}`} className="time-slot">
+          <Fragment key={r}>
+            <div className="time-slot">
               {!half ? (hour <= 12 ? `${hour}am` : `${hour - 12}pm`) : ''}
             </div>
             {DAYS.map(d => (
@@ -117,14 +117,18 @@ export default function CalendarGrid({ courses = [], isCurrent = false, onCourse
                   })}
               </div>
             ))}
-          </>
+          </Fragment>
         ))}
       </div>
 
-      {courses.filter(c => c.days?.length && c.start).length === 0 && (
+      {courses.length === 0 && (
         <div className="empty-overlay">
           <div className="empty-overlay-title">No courses yet</div>
-          <div className="empty-overlay-sub">Search the catalog to add courses to this schedule.</div>
+          <div className="empty-overlay-sub">
+            {isCurrent
+              ? 'Add courses in onboarding or search the catalog on the left.'
+              : 'Search the catalog to add courses to this schedule.'}
+          </div>
         </div>
       )}
     </div>
